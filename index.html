@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Kirthika Rajendran — AI & Data Developer</title>
+<title>Kirthika Rajendran — AI, Data & Full Stack Developer</title>
+<meta name="description" content="AI & Data Developer building dashboards, automation tools, and business web apps. React, Python, Claude AI. Open for freelance."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
@@ -12,255 +13,323 @@
   --border:rgba(212,168,94,0.1);--border2:rgba(212,168,94,0.22);
   --gold:#d4a85e;--gold2:#f0c878;--amber:#e8922a;--rust:#c45e2a;
   --cream:#f2ead8;--text:#e8ddc8;--muted:#8a7a62;--dim:#4a3e2e;--teal:#4a9e8e;
-  --ff-display:'Bebas Neue',sans-serif;--ff-serif:'Instrument Serif',serif;
-  --ff-mono:'IBM Plex Mono',monospace;--ff-body:'Outfit',sans-serif;
+  --green:#25d366;
+  --ff-d:'Bebas Neue',sans-serif;--ff-s:'Instrument Serif',serif;
+  --ff-m:'IBM Plex Mono',monospace;--ff-b:'Outfit',sans-serif;
 }
 ,::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--ff-body);font-size:16px;line-height:1.6;overflow-x:hidden}
+body{background:var(--bg);color:var(--text);font-family:var(--ff-b);font-size:16px;line-height:1.6;overflow-x:hidden}
 body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9998;opacity:0.7}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:18px 48px;background:rgba(15,11,8,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:var(--ff-display);font-size:22px;letter-spacing:0.08em;color:var(--gold)}
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:18px 52px;background:rgba(15,11,8,0.93);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:var(--ff-d);font-size:24px;letter-spacing:0.08em;color:var(--gold)}
 .nav-links{display:flex;gap:36px;list-style:none}
-.nav-links a{font-family:var(--ff-mono);font-size:11px;color:var(--muted);text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a{font-family:var(--ff-m);font-size:11px;color:var(--muted);text-decoration:none;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s}
 .nav-links a:hover{color:var(--gold)}
 .nav-ctas{display:flex;gap:8px;align-items:center}
-.nav-wa{font-family:var(--ff-mono);font-size:11px;letter-spacing:0.08em;background:transparent;border:1px solid rgba(37,211,102,0.4);color:#25d366;padding:8px 16px;border-radius:3px;text-decoration:none;transition:background 0.2s}
-.nav-wa:hover{background:rgba(37,211,102,0.1)}
-.nav-hire{font-family:var(--ff-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;background:var(--gold);color:var(--bg);padding:9px 20px;border-radius:3px;text-decoration:none;font-weight:500;transition:background 0.2s}
+.nav-wa{font-family:var(--ff-m);font-size:11px;letter-spacing:0.08em;background:transparent;border:1px solid rgba(37,211,102,0.35);color:var(--green);padding:8px 16px;border-radius:3px;text-decoration:none;transition:background 0.2s}
+.nav-wa:hover{background:rgba(37,211,102,0.08)}
+.nav-hire{font-family:var(--ff-m);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;background:var(--gold);color:var(--bg);padding:9px 22px;border-radius:3px;text-decoration:none;font-weight:500;transition:background 0.2s}
 .nav-hire:hover{background:var(--gold2)}
 
 /* HERO */
-.hero{min-height:100vh;padding:120px 48px 80px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.hero{min-height:100vh;padding:130px 52px 80px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
 .hero-glow{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,94,0.07) 0%,transparent 70%);top:-150px;right:-150px;pointer-events:none}
 .hero-glow2{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(196,94,42,0.05) 0%,transparent 70%);bottom:0;left:-100px;pointer-events:none}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(212,168,94,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(212,168,94,0.03) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 80% 60% at 50% 0%,black 30%,transparent 100%)}
-
 .hero-top{position:relative;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--ff-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);border:1px solid var(--border2);border-radius:2px;padding:6px 14px}
-.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:#25d366;animation:pulse 2s ease infinite}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--ff-m);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);border:1px solid rgba(37,211,102,0.3);border-radius:20px;padding:6px 14px}
+.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s ease infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(0.8)}}
-.hero-location{font-family:var(--ff-mono);font-size:10px;color:var(--muted);letter-spacing:0.08em}
+.hero-mid{position:relative;padding:44px 0 32px}
 
-/* HERO MAIN — 3 second clarity */
-.hero-mid{position:relative;padding:40px 0 32px}
-.hero-role{font-family:var(--ff-mono);font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.hero-role::before{content:'';width:32px;height:1px;background:var(--amber);opacity:0.6}
-.hero-h1{font-family:var(--ff-display);font-size:clamp(72px,11vw,155px);line-height:0.9;letter-spacing:0.01em}
+/* STRONG HEADLINE */
+.hero-eyebrow{font-family:var(--ff-m);font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--amber);opacity:0.6}
+.hero-h1{font-family:var(--ff-d);font-size:clamp(64px,10vw,148px);line-height:0.9;letter-spacing:0.01em;margin-bottom:24px}
 .hero-h1 .l1{color:var(--text);display:block}
-.hero-h1 .l2{font-family:var(--ff-serif);font-style:italic;font-size:0.88em;color:var(--gold);display:block}
-.hero-h1 .l3{color:rgba(232,221,200,0.15);display:block}
+.hero-h1 .l2{font-family:var(--ff-s);font-style:italic;font-size:0.88em;color:var(--gold);display:block}
+.hero-h1 .l3{color:rgba(232,221,200,0.12);display:block}
 
-/* VALUE PROPOSITION — instant clarity */
-.hero-value{background:rgba(212,168,94,0.06);border:1px solid var(--border2);border-radius:4px;padding:20px 24px;margin-top:28px;display:inline-flex;align-items:center;gap:16px;max-width:700px}
-.hv-icon{font-size:24px;flex-shrink:0}
-.hv-text{font-size:15px;color:var(--text);font-weight:400;line-height:1.5}
+/* VALUE PROP BOX */
+.hero-value{background:rgba(212,168,94,0.06);border:1px solid var(--border2);border-radius:4px;padding:18px 22px;display:inline-flex;align-items:flex-start;gap:14px;max-width:680px}
+.hv-icon{font-size:22px;flex-shrink:0;margin-top:2px}
+.hv-text{font-size:15px;color:var(--text);line-height:1.55}
 .hv-text strong{color:var(--gold);font-weight:600}
 
 .hero-bottom{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;padding-top:36px;border-top:1px solid var(--border);margin-top:36px}
 .hero-desc{font-size:14px;color:var(--muted);line-height:1.8;font-weight:300;max-width:460px}
 .hero-desc strong{color:var(--text);font-weight:500}
-.hero-right{display:flex;flex-direction:column;align-items:flex-end;gap:24px}
-.hero-stats{display:flex;gap:36px}
-.stat-b .sn{font-family:var(--ff-display);font-size:44px;color:var(--text);letter-spacing:-1px;line-height:1;display:block}
+.hero-right{display:flex;flex-direction:column;align-items:flex-end;gap:20px}
+.hero-stats{display:flex;gap:32px}
+.stat-b .sn{font-family:var(--ff-d);font-size:42px;color:var(--text);letter-spacing:-1px;line-height:1;display:block}
 .stat-b .sn em{color:var(--gold);font-style:normal}
-.stat-b .sl{font-family:var(--ff-mono);font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;display:block;margin-top:2px}
+.stat-b .sl{font-family:var(--ff-m);font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;display:block;margin-top:2px}
 .hero-actions{display:flex;gap:10px;flex-wrap:wrap}
-.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--bg);font-family:var(--ff-mono);font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:13px 24px;border-radius:3px;text-decoration:none;transition:background 0.2s,transform 0.2s}
+
+/* BUTTONS */
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--bg);font-family:var(--ff-m);font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:13px 24px;border-radius:3px;text-decoration:none;transition:all 0.2s}
 .btn-gold:hover{background:var(--gold2);transform:translateY(-2px)}
-.btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border2);color:var(--gold);font-family:var(--ff-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:13px 24px;border-radius:3px;text-decoration:none;transition:all 0.2s}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border2);color:var(--gold);font-family:var(--ff-m);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:13px 24px;border-radius:3px;text-decoration:none;transition:all 0.2s}
 .btn-ghost:hover{border-color:var(--gold);transform:translateY(-2px)}
-.btn-wa{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(37,211,102,0.3);color:#25d366;font-family:var(--ff-mono);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:13px 24px;border-radius:3px;text-decoration:none;transition:all 0.2s}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(37,211,102,0.3);color:var(--green);font-family:var(--ff-m);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;padding:13px 24px;border-radius:3px;text-decoration:none;transition:all 0.2s}
 .btn-wa:hover{background:rgba(37,211,102,0.08);transform:translateY(-2px)}
 
+/* TECH STACK BADGES */
+.stack-section{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:40px 52px}
+.stack-inner{max-width:1360px;margin:0 auto}
+.stack-label{font-family:var(--ff-m);font-size:9px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;opacity:0.6}
+.stack-badges{display:flex;flex-wrap:wrap;gap:10px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--border);border-radius:4px;padding:8px 14px;font-family:var(--ff-m);font-size:11px;color:var(--text);letter-spacing:0.04em;transition:border-color 0.2s,transform 0.2s}
+.badge:hover{border-color:var(--gold);transform:translateY(-2px)}
+.badge .b-icon{font-size:16px}
+.badge.hi{border-color:rgba(212,168,94,0.25);color:var(--gold)}
+
 /* MARQUEE */
-.marquee{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:12px 0;overflow:hidden;white-space:nowrap}
-.marquee-inner{display:inline-flex;animation:marquee 30s linear infinite}
-.marquee-inner span{font-family:var(--ff-display);font-size:13px;letter-spacing:0.12em;padding:0 32px;color:var(--muted)}
+.marquee{background:var(--card);border-bottom:1px solid var(--border);padding:12px 0;overflow:hidden;white-space:nowrap}
+.marquee-inner{display:inline-flex;animation:marquee 35s linear infinite}
+.marquee-inner span{font-family:var(--ff-d);font-size:13px;letter-spacing:0.12em;padding:0 32px;color:var(--muted)}
 .marquee-inner span.dot{color:var(--gold);padding:0}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* SECTION */
-.s-wrap{max-width:1360px;margin:0 auto;padding:90px 48px}
-.s-label{font-family:var(--ff-mono);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:48px}
+.s-wrap{max-width:1360px;margin:0 auto;padding:90px 52px}
+.s-label{font-family:var(--ff-m);font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:48px}
 .s-label::before{content:'';width:28px;height:1px;background:var(--gold);opacity:0.5}
 
-/* FLAGSHIP PROJECT */
-.flagship-bg{background:var(--bg2)}
+/* LAPTOP MOCKUP */
+.laptop-wrap{position:relative;width:100%}
+.laptop-frame{background:#1a1a1a;border-radius:12px 12px 4px 4px;padding:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.05);position:relative}
+.laptop-frame::before{content:'';position:absolute;top:4px;left:50%;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:#333;z-index:1}
+.laptop-screen{background:var(--bg);border-radius:8px;overflow:hidden;aspect-ratio:16/9;display:flex;flex-direction:column}
+.laptop-base{background:#222;height:16px;border-radius:0 0 8px 8px;margin:0 -8px -8px}
+.laptop-notch{width:80px;height:6px;background:#1a1a1a;margin:0 auto;border-radius:0 0 4px 4px}
+
+/* MOBILE MOCKUP */
+.mobile-frame{background:#1a1a1a;border-radius:24px;padding:8px;box-shadow:0 20px 40px rgba(0,0,0,0.4),0 0 0 1px rgba(255,255,255,0.05);width:160px;flex-shrink:0}
+.mobile-screen{background:var(--bg);border-radius:18px;overflow:hidden;aspect-ratio:9/19}
+
+/* FLAGSHIP */
+.flagship-bg{background:var(--bg)}
 .flagship-card{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border2);border-radius:6px;overflow:hidden;position:relative}
 .flagship-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),var(--amber),transparent)}
+.fl-info{padding:52px 44px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--border)}
+.fl-badge{display:inline-flex;align-items:center;gap:6px;font-family:var(--ff-m);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;background:rgba(212,168,94,0.1);border:1px solid rgba(212,168,94,0.25);color:var(--gold);padding:5px 12px;border-radius:2px;margin-bottom:16px;width:fit-content}
+.fl-title{font-family:var(--ff-d);font-size:clamp(40px,4.5vw,66px);letter-spacing:-0.3px;line-height:0.92;color:var(--text);margin-bottom:6px}
+.fl-title em{font-family:var(--ff-s);font-style:italic;color:var(--gold)}
+.fl-sub{font-family:var(--ff-m);font-size:10px;color:var(--muted);letter-spacing:0.06em;margin-bottom:20px}
 
-.fl-info{padding:56px 48px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--border)}
-.fl-badge{display:inline-flex;align-items:center;gap:6px;font-family:var(--ff-mono);font-size:9px;letter-spacing:0.14em;text-transform:uppercase;background:rgba(212,168,94,0.1);border:1px solid rgba(212,168,94,0.25);color:var(--gold);padding:5px 12px;border-radius:2px;margin-bottom:20px;width:fit-content}
-.fl-title{font-family:var(--ff-display);font-size:clamp(44px,5vw,72px);letter-spacing:-0.5px;line-height:0.92;color:var(--text);margin-bottom:8px}
-.fl-title em{font-family:var(--ff-serif);font-style:italic;color:var(--gold)}
-.fl-subtitle{font-family:var(--ff-mono);font-size:11px;color:var(--muted);letter-spacing:0.06em;margin-bottom:24px}
+/* METRICS */
+.metrics-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px}
+.metric{background:rgba(212,168,94,0.05);border:1px solid rgba(212,168,94,0.12);border-radius:3px;padding:12px;text-align:center}
+.metric .mv{font-family:var(--ff-d);font-size:24px;color:var(--gold);letter-spacing:-0.5px;line-height:1;display:block}
+.metric .ml{font-family:var(--ff-m);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;display:block;margin-top:3px}
 
-/* REAL METRICS ROW */
-.metrics-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:24px}
-.metric{background:rgba(212,168,94,0.05);border:1px solid rgba(212,168,94,0.12);border-radius:4px;padding:14px 12px;text-align:center}
-.metric .mv{font-family:var(--ff-display);font-size:28px;color:var(--gold);letter-spacing:-0.5px;line-height:1;display:block}
-.metric .ml{font-family:var(--ff-mono);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;display:block;margin-top:4px}
-
-.fl-problem{border-left:2px solid var(--gold);padding:12px 16px;margin-bottom:22px;background:rgba(212,168,94,0.04)}
-.fl-pl{font-family:var(--ff-mono);font-size:8px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:5px;opacity:0.7}
-.fl-problem p{font-size:13px;color:var(--muted);line-height:1.65}
-
-/* CASE STUDY GRID */
-.cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:24px}
+/* CASE STUDY */
+.cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}
 .cs-item{padding:12px;border:1px solid var(--border);border-radius:3px;background:rgba(255,255,255,0.01)}
-.cs-item .csl{font-family:var(--ff-mono);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:5px;opacity:0.7}
-.cs-item .csv{font-size:12px;color:var(--text);line-height:1.5;font-weight:400}
-
-.fl-stack{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:28px}
-.stag{font-family:var(--ff-mono);font-size:9px;letter-spacing:0.06em;border:1px solid var(--border);padding:3px 8px;border-radius:2px;color:var(--muted)}
+.cs-item .csl{font-family:var(--ff-m);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;opacity:0.6}
+.cs-item .csv{font-size:12px;color:var(--text);line-height:1.5}
+.problem-box{border-left:2px solid var(--gold);padding:10px 14px;margin-bottom:18px;background:rgba(212,168,94,0.04)}
+.problem-box .pb-l{font-family:var(--ff-m);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;opacity:0.7}
+.problem-box p{font-size:12px;color:var(--muted);line-height:1.65}
+.fl-stack{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:24px}
+.stag{font-family:var(--ff-m);font-size:9px;letter-spacing:0.06em;border:1px solid var(--border);padding:3px 8px;border-radius:2px;color:var(--muted)}
 .stag.hi{border-color:rgba(212,168,94,0.3);color:var(--gold);background:rgba(212,168,94,0.05)}
-.fl-links{display:flex;gap:14px}
-.fl-link{font-family:var(--ff-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:5px;border-bottom:1px solid rgba(212,168,94,0.3);padding-bottom:2px;transition:all 0.2s}
+.fl-links{display:flex;gap:14px;flex-wrap:wrap}
+.fl-link{font-family:var(--ff-m);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:5px;border-bottom:1px solid rgba(212,168,94,0.3);padding-bottom:2px;transition:all 0.2s}
 .fl-link:hover{color:var(--gold2);border-color:var(--gold2)}
 .fl-link.dim{color:var(--muted);border-color:var(--dim)}
 .fl-link.dim:hover{color:var(--text);border-color:var(--muted)}
 
 /* MOCKUP */
-.fl-mock{background:var(--bg);padding:36px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
+.fl-mock{background:var(--bg2);padding:32px;display:flex;flex-direction:column;gap:10px;overflow:hidden;position:relative}
 .fl-mock::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,94,0.06) 0%,transparent 70%);top:-80px;right:-60px;pointer-events:none}
-.mk-bar{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--border);font-family:var(--ff-mono);font-size:10px;color:var(--muted);letter-spacing:0.06em}
+.mk-bar{display:flex;justify-content:space-between;align-items:center;padding-bottom:10px;border-bottom:1px solid var(--border);font-family:var(--ff-m);font-size:10px;color:var(--muted);letter-spacing:0.06em}
 .mk-live{color:var(--teal);display:flex;align-items:center;gap:5px}
-.mk-live::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal);animation:pulse 1.8s ease infinite}
-.kpi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.kpi{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:13px}
-.kpi .kl{font-family:var(--ff-mono);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:7px}
-.kpi .kv{font-family:var(--ff-display);font-size:20px;color:var(--text);letter-spacing:-0.5px;line-height:1}
-.kpi .kd{font-family:var(--ff-mono);font-size:9px;margin-top:5px}
+.mk-live::before,.mk-amber::before,.mk-teal::before{content:'';width:5px;height:5px;border-radius:50%;animation:pulse 1.8s ease infinite}
+.mk-live::before{background:var(--teal)}
+.mk-amber{color:var(--amber);display:flex;align-items:center;gap:5px}
+.mk-amber::before{background:var(--amber)}
+.mk-teal{color:var(--teal);display:flex;align-items:center;gap:5px}
+.mk-teal::before{background:var(--teal)}
+.kpi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.kpi{background:var(--card);border:1px solid var(--border);border-radius:3px;padding:12px}
+.kpi .kl{font-family:var(--ff-m);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:6px}
+.kpi .kv{font-family:var(--ff-d);font-size:20px;color:var(--text);letter-spacing:-0.5px;line-height:1}
+.kpi .kd{font-family:var(--ff-m);font-size:9px;margin-top:4px}
 .kpi .kd.up{color:var(--teal)}.kpi .kd.dn{color:var(--rust)}
-.chart-box{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:14px;flex:1}
-.chart-lbl{font-family:var(--ff-mono);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px}
-.bars{display:flex;align-items:flex-end;gap:4px;height:68px}
+.chart-box{background:var(--card);border:1px solid var(--border);border-radius:3px;padding:12px;flex:1}
+.chart-lbl{font-family:var(--ff-m);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px}
+.bars{display:flex;align-items:flex-end;gap:4px;height:64px}
 .b{flex:1;border-radius:2px 2px 0 0;background:rgba(212,168,94,0.12)}
 .b.hi{background:var(--gold)}.b.am{background:var(--amber)}.b.tl{background:rgba(74,158,142,0.5)}
-.ai-box{background:rgba(212,168,94,0.04);border:1px solid rgba(212,168,94,0.12);border-radius:4px;padding:13px}
-.ai-l{font-family:var(--ff-mono);font-size:8px;color:var(--gold);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:6px;opacity:0.8}
+.ai-box{background:rgba(212,168,94,0.04);border:1px solid rgba(212,168,94,0.12);border-radius:3px;padding:12px}
+.ai-l{font-family:var(--ff-m);font-size:8px;color:var(--gold);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:6px;opacity:0.8}
 .ai-p{font-size:11px;color:var(--muted);line-height:1.6}
 .ai-p strong{color:var(--gold)}
+
+/* FEAT CARDS */
+.feat-wrap{max-width:1360px;margin:0 auto;padding:0 52px}
+.feat-card{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-top:24px;transition:border-color 0.3s}
+.feat-card:hover{border-color:var(--border2)}
+.fc-info{padding:44px 36px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--border)}
+.fc-num{font-family:var(--ff-d);font-size:72px;color:rgba(212,168,94,0.05);letter-spacing:-3px;line-height:1;margin-bottom:12px}
+.fc-tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--ff-m);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;border-radius:2px;margin-bottom:14px;width:fit-content}
+.fc-tag.amber{background:rgba(232,146,42,0.1);color:var(--amber);border:1px solid rgba(232,146,42,0.2)}
+.fc-tag.teal{background:rgba(74,158,142,0.1);color:var(--teal);border:1px solid rgba(74,158,142,0.2)}
+.fc-title{font-family:var(--ff-d);font-size:clamp(32px,3.5vw,52px);letter-spacing:-0.3px;line-height:0.92;color:var(--text);margin-bottom:14px}
+.fc-title em{font-family:var(--ff-s);font-style:italic;color:var(--gold)}
+.fc-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:14px}
+.fc-m{background:rgba(212,168,94,0.05);border:1px solid rgba(212,168,94,0.1);border-radius:3px;padding:9px;text-align:center}
+.fc-m .fmv{font-family:var(--ff-d);font-size:20px;color:var(--gold);letter-spacing:-0.5px;line-height:1;display:block}
+.fc-m .fml{font-family:var(--ff-m);font-size:7px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-top:2px}
+.fc-cs{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:14px}
+.fc-ci{padding:10px;border:1px solid var(--border);border-radius:3px;background:rgba(255,255,255,0.01)}
+.fc-ci .cil{font-family:var(--ff-m);font-size:7px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;opacity:0.6}
+.fc-ci .civ{font-size:11px;color:var(--text);line-height:1.4}
+.fc-stack{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:20px}
+.fc-links{display:flex;gap:14px;flex-wrap:wrap}
+.fc-link{font-family:var(--ff-m);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:5px;border-bottom:1px solid rgba(212,168,94,0.3);padding-bottom:2px;transition:all 0.2s}
+.fc-link:hover{color:var(--gold2);border-color:var(--gold2)}
+.fc-link.dim{color:var(--muted);border-color:var(--dim)}
+.fc-link.dim:hover{color:var(--text);border-color:var(--muted)}
+.fc-mock{background:var(--bg2);padding:32px;display:flex;flex-direction:column;gap:10px;overflow:hidden}
+.inv-up{border:1px dashed rgba(232,146,42,0.3);border-radius:3px;padding:16px;text-align:center;background:rgba(232,146,42,0.03)}
+.inv-up .iu-i{font-size:20px;margin-bottom:4px}
+.inv-up .iu-t{font-family:var(--ff-m);font-size:10px;color:var(--muted)}
+.inv-up .iu-s{font-family:var(--ff-m);font-size:9px;color:var(--amber);margin-top:3px}
+.inv-fields{background:var(--card);border:1px solid var(--border);border-radius:3px;padding:12px}
+.inv-fl{font-family:var(--ff-m);font-size:8px;color:var(--amber);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;opacity:0.8}
+.inv-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.inv-f{background:rgba(255,255,255,0.02);border-radius:2px;padding:7px}
+.inv-f .ifl{font-family:var(--ff-m);font-size:7px;color:var(--muted);text-transform:uppercase;margin-bottom:3px}
+.inv-f .ifv{font-size:11px;color:var(--text)}
+.seg{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.seg .sl2{font-size:11px;color:var(--muted);width:70px}
+.seg .str{flex:1;height:3px;background:rgba(255,255,255,0.05);border-radius:2px;margin:0 10px}
+.seg .sf{height:100%;border-radius:2px}
+.seg .sv{font-family:var(--ff-m);font-size:9px;color:var(--muted);width:28px;text-align:right}
 
 /* PROJECTS GRID */
 .proj-bg{background:var(--bg2)}
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden}
-.pcard{background:var(--bg2);padding:32px 28px;display:flex;flex-direction:column;gap:14px;transition:background 0.25s}
+.pcard{background:var(--bg2);padding:30px 26px;display:flex;flex-direction:column;gap:14px;transition:background 0.25s}
 .pcard:hover{background:var(--card)}
-.pcard-num{font-family:var(--ff-mono);font-size:10px;color:var(--dim);letter-spacing:0.1em}
-.pcard-title{font-family:var(--ff-display);font-size:24px;letter-spacing:-0.2px;line-height:1.05;color:var(--text)}
-
-/* CASE STUDY INSIDE CARD */
-.pcard-cs{display:flex;flex-direction:column;gap:6px;padding:12px;background:rgba(212,168,94,0.03);border:1px solid var(--border);border-radius:3px}
-.pcard-cs .pcs-row{display:flex;gap:8px;align-items:flex-start}
-.pcard-cs .pcs-l{font-family:var(--ff-mono);font-size:8px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);opacity:0.6;width:52px;flex-shrink:0;padding-top:1px}
-.pcard-cs .pcs-v{font-size:12px;color:var(--muted);line-height:1.5}
-
-/* METRICS MINI */
-.pcard-metrics{display:flex;gap:8px;flex-wrap:wrap}
-.pm{background:rgba(212,168,94,0.05);border:1px solid rgba(212,168,94,0.1);border-radius:3px;padding:6px 10px;text-align:center}
-.pm .pmv{font-family:var(--ff-display);font-size:18px;color:var(--gold);letter-spacing:-0.5px;line-height:1;display:block}
-.pm .pml{font-family:var(--ff-mono);font-size:7px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-top:2px}
-
+.pcard-num{font-family:var(--ff-m);font-size:10px;color:var(--dim);letter-spacing:0.1em}
+.pcard-title{font-family:var(--ff-d);font-size:23px;letter-spacing:-0.2px;line-height:1.05;color:var(--text)}
+.pcard-metrics{display:flex;gap:7px;flex-wrap:wrap}
+.pm{background:rgba(212,168,94,0.05);border:1px solid rgba(212,168,94,0.1);border-radius:3px;padding:5px 9px;text-align:center}
+.pm .pmv{font-family:var(--ff-d);font-size:17px;color:var(--gold);letter-spacing:-0.5px;line-height:1;display:block}
+.pm .pml{font-family:var(--ff-m);font-size:7px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-top:2px}
+.pcard-cs{display:flex;flex-direction:column;gap:5px;padding:10px;background:rgba(212,168,94,0.03);border:1px solid var(--border);border-radius:3px}
+.pcs-row{display:flex;gap:8px;align-items:flex-start}
+.pcs-l{font-family:var(--ff-m);font-size:8px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);opacity:0.6;width:52px;flex-shrink:0;padding-top:1px}
+.pcs-v{font-size:11px;color:var(--muted);line-height:1.5}
 .pcard-stack{display:flex;flex-wrap:wrap;gap:5px}
-.ptag{font-family:var(--ff-mono);font-size:9px;letter-spacing:0.06em;border:1px solid var(--border);padding:2px 7px;border-radius:2px;color:var(--muted)}
+.ptag{font-family:var(--ff-m);font-size:9px;letter-spacing:0.06em;border:1px solid var(--border);padding:2px 7px;border-radius:2px;color:var(--muted)}
 .ptag.hi{border-color:rgba(212,168,94,0.3);color:var(--gold);background:rgba(212,168,94,0.04)}
 .pcard-foot{display:flex;gap:14px;padding-top:10px;border-top:1px solid var(--border)}
-.plink{font-family:var(--ff-mono);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:4px;transition:color 0.2s}
+.plink{font-family:var(--ff-m);font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:4px;transition:color 0.2s}
 .plink:hover{color:var(--gold2)}
 .plink.dim{color:var(--muted)}.plink.dim:hover{color:var(--text)}
-.pcard.cta-p{background:var(--card2);justify-content:center;align-items:flex-start}
+.pcard.cta-p{background:var(--card2);justify-content:center}
 .pcard.cta-p:hover{background:#2a2015}
 .pcard.cta-p .pcard-title{color:var(--gold)}
 
+/* SKILLS */
+.skills-bg{background:var(--bg3);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px}
+.skill-card{background:var(--card);border:1px solid var(--border2);border-radius:4px;padding:22px;position:relative;overflow:hidden}
+.skill-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--amber))}
+.skill-title{font-family:var(--ff-d);font-size:17px;color:var(--gold);margin-bottom:4px}
+.skill-sub{font-family:var(--ff-m);font-size:8px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;opacity:0.5}
+.skill-tags{display:flex;flex-wrap:wrap;gap:5px}
+
 /* SERVICES */
 .svc-bg{background:var(--bg3)}
-.svc-heading{font-family:var(--ff-display);font-size:clamp(56px,7vw,100px);line-height:0.9;letter-spacing:-1px;margin-bottom:64px;color:var(--text)}
-.svc-heading em{font-family:var(--ff-serif);font-style:italic;color:var(--gold)}
+.svc-heading{font-family:var(--ff-d);font-size:clamp(52px,7vw,96px);line-height:0.9;letter-spacing:-1px;margin-bottom:60px;color:var(--text)}
+.svc-heading em{font-family:var(--ff-s);font-style:italic;color:var(--gold)}
 .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden}
-.svc-card{background:var(--bg3);padding:40px 32px;display:flex;flex-direction:column;transition:background 0.3s}
+.svc-card{background:var(--bg3);padding:36px 28px;display:flex;flex-direction:column;transition:background 0.3s}
 .svc-card:hover{background:var(--card)}
-.svc-icon{font-size:24px;margin-bottom:20px}
-.svc-n{font-family:var(--ff-mono);font-size:9px;color:var(--muted);letter-spacing:0.14em;margin-bottom:12px;opacity:0.5}
-.svc-t{font-family:var(--ff-display);font-size:24px;letter-spacing:-0.2px;color:var(--text);margin-bottom:12px;line-height:1.05}
-.svc-d{font-size:13px;color:var(--muted);line-height:1.75;margin-bottom:20px;font-weight:300;flex:1}
+.svc-icon{font-size:24px;margin-bottom:18px}
+.svc-n{font-family:var(--ff-m);font-size:9px;color:var(--muted);letter-spacing:0.14em;margin-bottom:10px;opacity:0.5}
+.svc-t{font-family:var(--ff-d);font-size:22px;letter-spacing:-0.2px;color:var(--text);margin-bottom:10px;line-height:1.05}
+.svc-d{font-size:13px;color:var(--muted);line-height:1.72;margin-bottom:18px;font-weight:300;flex:1}
 .svc-list{list-style:none;display:flex;flex-direction:column;gap:7px}
-.svc-list li{font-family:var(--ff-mono);font-size:10px;letter-spacing:0.04em;color:var(--muted);display:flex;align-items:center;gap:7px}
+.svc-list li{font-family:var(--ff-m);font-size:10px;letter-spacing:0.04em;color:var(--muted);display:flex;align-items:center;gap:7px}
 .svc-list li::before{content:'→';color:var(--gold);font-size:10px;opacity:0.5}
-.process-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:48px}
-.ps{background:var(--bg3);padding:28px 24px;transition:background 0.3s}
+.process-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:44px}
+.ps{background:var(--bg3);padding:26px 22px;transition:background 0.3s}
 .ps:hover{background:var(--card)}
-.ps-n{font-family:var(--ff-display);font-size:48px;color:rgba(212,168,94,0.07);letter-spacing:-2px;line-height:1;margin-bottom:12px}
-.ps-t{font-family:var(--ff-display);font-size:17px;color:var(--text);margin-bottom:6px}
+.ps-n{font-family:var(--ff-d);font-size:44px;color:rgba(212,168,94,0.07);letter-spacing:-2px;line-height:1;margin-bottom:10px}
+.ps-t{font-family:var(--ff-d);font-size:16px;color:var(--text);margin-bottom:5px}
 .ps-d{font-size:12px;color:var(--muted);line-height:1.6;font-weight:300}
 
 /* ABOUT */
 .about-bg{background:var(--bg)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
-.big-q{font-family:var(--ff-serif);font-style:italic;font-size:clamp(24px,2.8vw,38px);line-height:1.35;color:var(--text);margin-bottom:24px}
+.big-q{font-family:var(--ff-s);font-style:italic;font-size:clamp(22px,2.5vw,36px);line-height:1.35;color:var(--text);margin-bottom:22px}
 .big-q span{color:var(--gold)}
-.about-body{font-size:14px;color:var(--muted);line-height:1.85;font-weight:300;margin-bottom:28px}
+.about-body{font-size:14px;color:var(--muted);line-height:1.85;font-weight:300;margin-bottom:26px}
 .about-body strong{color:var(--text);font-weight:500}
 .trust-list{display:flex;flex-direction:column}
-.ti{display:flex;align-items:flex-start;gap:18px;padding:22px 0;border-bottom:1px solid var(--border)}
+.ti{display:flex;align-items:flex-start;gap:16px;padding:20px 0;border-bottom:1px solid var(--border)}
 .ti:first-child{border-top:1px solid var(--border)}
-.ti-n{font-family:var(--ff-display);font-size:32px;color:var(--gold);letter-spacing:-1px;line-height:1;flex-shrink:0;width:60px}
-.ti-b .ti-t{font-family:var(--ff-display);font-size:16px;color:var(--text);margin-bottom:3px}
+.ti-n{font-family:var(--ff-d);font-size:30px;color:var(--gold);letter-spacing:-1px;line-height:1;flex-shrink:0;width:60px}
+.ti-b .ti-t{font-family:var(--ff-d);font-size:15px;color:var(--text);margin-bottom:3px}
 .ti-b .ti-d{font-size:12px;color:var(--muted);line-height:1.6;font-weight:300}
-.gh-block{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:24px 28px;margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.gh-t{font-family:var(--ff-display);font-size:18px;color:var(--gold);margin-bottom:3px}
+.gh-block{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:22px 26px;margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.gh-t{font-family:var(--ff-d);font-size:17px;color:var(--gold);margin-bottom:3px}
 .gh-s{font-size:12px;color:var(--muted);font-weight:300}
-.gh-nums{display:flex;gap:24px}
-.ghn .gnv{font-family:var(--ff-display);font-size:30px;color:var(--text);letter-spacing:-1px;line-height:1}
-.ghn .gnl{font-family:var(--ff-mono);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-top:2px}
+.gh-nums{display:flex;gap:22px}
+.ghn .gnv{font-family:var(--ff-d);font-size:28px;color:var(--text);letter-spacing:-1px;line-height:1}
+.ghn .gnl{font-family:var(--ff-m);font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-top:2px}
 
-/* CTA — IMPROVED CONTACT */
+/* CONTACT */
 .cta-bg{background:var(--card2);border-top:1px solid var(--border)}
-.cta-inner{max-width:1360px;margin:0 auto;padding:90px 48px}
-.cta-h{font-family:var(--ff-display);font-size:clamp(48px,6.5vw,90px);line-height:0.9;letter-spacing:-1px;color:var(--text);margin-bottom:16px}
-.cta-h em{font-family:var(--ff-serif);font-style:italic;color:var(--gold)}
+.cta-inner{max-width:1360px;margin:0 auto;padding:90px 52px}
+.cta-avail{display:inline-flex;align-items:center;gap:8px;font-family:var(--ff-m);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);border:1px solid rgba(37,211,102,0.3);border-radius:20px;padding:6px 14px;margin-bottom:24px}
+.cta-avail::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s ease infinite}
+.cta-h{font-family:var(--ff-d);font-size:clamp(44px,6vw,84px);line-height:0.9;letter-spacing:-1px;color:var(--text);margin-bottom:14px}
+.cta-h em{font-family:var(--ff-s);font-style:italic;color:var(--gold)}
 .cta-sub{font-size:14px;color:var(--muted);max-width:400px;line-height:1.8;font-weight:300;margin-bottom:40px}
-.cta-avail{display:inline-flex;align-items:center;gap:8px;font-family:var(--ff-mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(74,158,142,0.3);border-radius:2px;padding:6px 14px;margin-bottom:32px}
-.cta-avail::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s ease infinite}
-
-/* ONE-CLICK CONTACT BUTTONS */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
 .contact-buttons{display:flex;flex-direction:column;gap:10px}
-.c-btn{display:flex;align-items:center;gap:14px;padding:16px 20px;border-radius:4px;text-decoration:none;transition:all 0.2s;border:1px solid}
+.c-btn{display:flex;align-items:center;gap:14px;padding:15px 18px;border-radius:4px;text-decoration:none;transition:all 0.2s;border:1px solid}
 .c-btn:hover{transform:translateX(4px)}
-.c-btn .cb-icon{font-size:20px;width:28px;text-align:center;flex-shrink:0}
-.c-btn .cb-label{font-family:var(--ff-mono);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.6;margin-bottom:2px}
-.c-btn .cb-val{font-family:var(--ff-display);font-size:15px;letter-spacing:0.02em}
-.c-btn.email{background:rgba(212,168,94,0.08);border-color:rgba(212,168,94,0.3);color:var(--gold)}
-.c-btn.email:hover{background:rgba(212,168,94,0.14)}
-.c-btn.wa{background:rgba(37,211,102,0.06);border-color:rgba(37,211,102,0.25);color:#25d366}
-.c-btn.wa:hover{background:rgba(37,211,102,0.12)}
-.c-btn.li{background:rgba(10,102,194,0.08);border-color:rgba(10,102,194,0.25);color:#5ba4cf}
-.c-btn.li:hover{background:rgba(10,102,194,0.14)}
-.c-btn.gh{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.1);color:var(--text)}
-.c-btn.gh:hover{background:rgba(255,255,255,0.08)}
-.contact-right{}
-.contact-info-box{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:28px}
-.cib-title{font-family:var(--ff-display);font-size:22px;color:var(--text);margin-bottom:16px}
-.cib-items{display:flex;flex-direction:column;gap:12px}
+.c-btn .cb-icon{font-size:18px;width:26px;text-align:center;flex-shrink:0}
+.c-btn .cb-label{font-family:var(--ff-m);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.6;margin-bottom:2px}
+.c-btn .cb-val{font-family:var(--ff-d);font-size:14px;letter-spacing:0.02em}
+.c-btn.email{background:rgba(212,168,94,0.07);border-color:rgba(212,168,94,0.25);color:var(--gold)}
+.c-btn.email:hover{background:rgba(212,168,94,0.13)}
+.c-btn.wa{background:rgba(37,211,102,0.05);border-color:rgba(37,211,102,0.2);color:var(--green)}
+.c-btn.wa:hover{background:rgba(37,211,102,0.1)}
+.c-btn.li{background:rgba(10,102,194,0.07);border-color:rgba(10,102,194,0.2);color:#5ba4cf}
+.c-btn.li:hover{background:rgba(10,102,194,0.12)}
+.c-btn.gh{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.08);color:var(--text)}
+.c-btn.gh:hover{background:rgba(255,255,255,0.07)}
+.contact-info-box{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:26px}
+.cib-title{font-family:var(--ff-d);font-size:20px;color:var(--text);margin-bottom:14px}
+.cib-items{display:flex;flex-direction:column;gap:10px}
 .cib-item{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
-.cib-item .ci-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.cib-item .ci-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
 .cib-item strong{color:var(--text);font-weight:500}
-.cib-rates{margin-top:20px;padding-top:20px;border-top:1px solid var(--border)}
-.cib-rates .cr-title{font-family:var(--ff-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;opacity:0.6}
-.rate-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(212,168,94,0.05)}
+.cib-rates{margin-top:18px;padding-top:18px;border-top:1px solid var(--border)}
+.cr-title{font-family:var(--ff-m);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;opacity:0.6}
+.rate-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(212,168,94,0.05)}
 .rate-row .rr-type{font-size:13px;color:var(--muted)}
-.rate-row .rr-price{font-family:var(--ff-display);font-size:18px;color:var(--gold);letter-spacing:-0.3px}
+.rate-row .rr-price{font-family:var(--ff-d);font-size:17px;color:var(--gold);letter-spacing:-0.3px}
 
 /* FOOTER */
-footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.f-logo{font-family:var(--ff-display);font-size:20px;color:var(--gold);letter-spacing:0.08em}
-.f-copy{font-family:var(--ff-mono);font-size:10px;color:var(--dim);letter-spacing:0.06em}
-.f-status{display:flex;align-items:center;gap:6px;font-family:var(--ff-mono);font-size:10px;color:var(--muted);letter-spacing:0.06em}
-.fdot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:pulse 2s ease infinite}
+footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.f-logo{font-family:var(--ff-d);font-size:20px;color:var(--gold);letter-spacing:0.08em}
+.f-copy{font-family:var(--ff-m);font-size:10px;color:var(--dim);letter-spacing:0.06em}
+.f-status{display:flex;align-items:center;gap:6px;font-family:var(--ff-m);font-size:10px;color:var(--muted)}
+.fdot{width:5px;height:5px;border-radius:50%;background:var(--green);animation:pulse 2s ease infinite}
 
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity 0.8s ease,transform 0.8s ease}
@@ -268,65 +337,16 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
 .rl{opacity:0;transform:translateX(-24px);transition:opacity 0.8s ease,transform 0.8s ease}
 .rl.visible{opacity:1;transform:none}
 
-/* FEATURED PROJECTS (other 2) */
-.feat-card{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border);overflow:hidden;transition:background 0.3s;position:relative}
-.feat-card:last-of-type{border-bottom:1px solid var(--border)}
-.feat-card:hover{background:rgba(212,168,94,0.02)}
-.fc-info{padding:56px 48px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--border)}
-.fc-num{font-family:var(--ff-display);font-size:80px;color:rgba(212,168,94,0.05);letter-spacing:-3px;line-height:1;margin-bottom:16px}
-.fc-tag{display:inline-flex;align-items:center;gap:6px;font-family:var(--ff-mono);font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;border-radius:2px;margin-bottom:16px;width:fit-content}
-.fc-tag.amber{background:rgba(232,146,42,0.1);color:var(--amber);border:1px solid rgba(232,146,42,0.2)}
-.fc-tag.teal{background:rgba(74,158,142,0.1);color:var(--teal);border:1px solid rgba(74,158,142,0.2)}
-.fc-title{font-family:var(--ff-display);font-size:clamp(36px,4vw,58px);letter-spacing:-0.3px;line-height:0.92;color:var(--text);margin-bottom:18px}
-.fc-title em{font-family:var(--ff-serif);font-style:italic;color:var(--gold)}
-.fc-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:18px}
-.fc-m{background:rgba(212,168,94,0.05);border:1px solid rgba(212,168,94,0.1);border-radius:3px;padding:10px;text-align:center}
-.fc-m .fmv{font-family:var(--ff-display);font-size:22px;color:var(--gold);letter-spacing:-0.5px;line-height:1;display:block}
-.fc-m .fml{font-family:var(--ff-mono);font-size:7px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;display:block;margin-top:3px}
-.fc-problem{border-left:2px solid var(--gold);padding:10px 14px;margin-bottom:18px;background:rgba(212,168,94,0.04)}
-.fc-pl{font-family:var(--ff-mono);font-size:8px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;opacity:0.7}
-.fc-problem p{font-size:13px;color:var(--muted);line-height:1.6}
-.fc-cs{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:18px}
-.fc-ci{padding:10px;border:1px solid var(--border);border-radius:3px;background:rgba(255,255,255,0.01)}
-.fc-ci .cil{font-family:var(--ff-mono);font-size:7px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;opacity:0.7}
-.fc-ci .civ{font-size:11px;color:var(--text);line-height:1.4}
-.fc-stack{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:24px}
-.fc-links{display:flex;gap:14px}
-.fc-link{font-family:var(--ff-mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:5px;border-bottom:1px solid rgba(212,168,94,0.3);padding-bottom:2px;transition:all 0.2s}
-.fc-link:hover{color:var(--gold2);border-color:var(--gold2)}
-.fc-link.dim{color:var(--muted);border-color:var(--dim)}
-.fc-link.dim:hover{color:var(--text);border-color:var(--muted)}
-.fc-mock{background:var(--bg);padding:36px;display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
-.inv-up{border:1px dashed rgba(232,146,42,0.3);border-radius:4px;padding:16px;text-align:center;background:rgba(232,146,42,0.03)}
-.inv-up .iu-i{font-size:20px;margin-bottom:4px}
-.inv-up .iu-t{font-family:var(--ff-mono);font-size:10px;color:var(--muted);letter-spacing:0.06em}
-.inv-up .iu-s{font-family:var(--ff-mono);font-size:9px;color:var(--amber);margin-top:3px}
-.inv-fields{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:13px}
-.inv-fl{font-family:var(--ff-mono);font-size:8px;color:var(--amber);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;opacity:0.8}
-.inv-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
-.inv-f{background:rgba(255,255,255,0.02);border-radius:3px;padding:7px}
-.inv-f .ifl{font-family:var(--ff-mono);font-size:7px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:3px}
-.inv-f .ifv{font-size:11px;color:var(--text)}
-.mk-amber{color:var(--amber);display:flex;align-items:center;gap:5px}
-.mk-amber::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--amber);animation:pulse 1.8s ease infinite}
-.seg{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
-.seg .sl2{font-size:11px;color:var(--muted);width:70px}
-.seg .str{flex:1;height:3px;background:rgba(255,255,255,0.05);border-radius:2px;margin:0 10px}
-.seg .sf{height:100%;border-radius:2px}
-.seg .sv{font-family:var(--ff-mono);font-size:9px;color:var(--muted);width:28px;text-align:right}
-
 @media(max-width:960px){
   nav{padding:14px 20px}.nav-links{display:none}
-  [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr 1fr !important}
   .hero{padding:90px 20px 60px}
   .hero-bottom{grid-template-columns:1fr}.hero-right{align-items:flex-start}
   .s-wrap{padding:60px 20px}
-  .flagship-card{grid-template-columns:1fr}
-  .fl-info{border-right:none;border-bottom:1px solid var(--border);padding:36px 20px}
-  .fl-mock{padding:24px 20px}
-  .feat-card{grid-template-columns:1fr}
-  .fc-info{border-right:none;border-bottom:1px solid var(--border);padding:36px 20px}
-  .fc-mock{padding:24px 20px}
+  .stack-section{padding:28px 20px}
+  .flagship-card,.feat-card{grid-template-columns:1fr}
+  .fl-info,.fc-info{border-right:none;border-bottom:1px solid var(--border);padding:32px 20px}
+  .fl-mock,.fc-mock{padding:24px 20px}
+  .feat-wrap{padding:0 20px}
   .proj-grid{grid-template-columns:1fr}
   .svc-grid{grid-template-columns:1fr}
   .process-row{grid-template-columns:1fr 1fr}
@@ -335,7 +355,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
   .cta-inner{padding:60px 20px}
   footer{padding:20px}
   .metrics-row{grid-template-columns:repeat(2,1fr)}
-  .fc-cs{grid-template-columns:1fr}
+  .fc-cs,.cs-grid{grid-template-columns:1fr}
+  .skill-grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -345,47 +366,47 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
 <nav>
   <div class="nav-logo">KR.</div>
   <ul class="nav-links">
-    <li><a href="#flagship">Work</a></li>
+    <li><a href="#work">Work</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-ctas">
-    <a href="https://wa.me/919XXXXXXXXX" target="_blank" class="nav-wa">💬 WhatsApp</a>
+    <a href="https://wa.me/918939618461" target="_blank" class="nav-wa">💬 WhatsApp</a>
     <a href="mailto:kirthika.rajendran2005@gmail.com" class="nav-hire">Hire Me →</a>
   </div>
 </nav>
 
-<!-- HERO — 3 second clarity -->
+<!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-glow"></div><div class="hero-glow2"></div><div class="hero-grid"></div>
 
   <div class="hero-top">
-    <div class="hero-badge">Open to Freelance · Chennai, India</div>
-    <div class="hero-location">📍 Chennai · Remote Worldwide</div>
+    <div class="hero-badge">Available for Freelance & Internships</div>
+    <div style="font-family:var(--ff-m);font-size:10px;color:var(--muted);letter-spacing:0.08em">📍 Chennai · Remote Worldwide</div>
   </div>
 
   <div class="hero-mid">
-    <div class="hero-role">AI & Data Developer</div>
+    <div class="hero-eyebrow">AI & Data Developer</div>
     <h1 class="hero-h1">
-      <span class="l1">React &amp;</span>
-      <span class="l2">AI Developer</span>
+      <span class="l1">Full Stack</span>
+      <span class="l2">&amp; AI Developer</span>
       <span class="l3">for hire.</span>
     </h1>
-    <!-- VALUE PROP — first 3 seconds -->
     <div class="hero-value">
       <div class="hv-icon">⚡</div>
-      <div class="hv-text">I build <strong>AI-powered business dashboards &amp; automation tools</strong> that help companies track revenue, automate data entry, and make faster decisions — using React, Python &amp; Claude AI.</div>
+      <div class="hv-text">Building <strong>modern dashboards, AI automation tools, and business web apps</strong> — using React, Python &amp; Claude AI. I turn complex data into clean, sellable products.</div>
     </div>
   </div>
 
   <div class="hero-bottom">
     <div>
-      <p class="hero-desc">Specialising in <strong>analytics dashboards, invoice automation, and SaaS interfaces</strong> for startups and SMBs. Every project ships with clean code, documentation, and real business impact.</p>
+      <p class="hero-desc">Specialising in <strong>analytics dashboards, invoice automation, and SaaS interfaces</strong> for startups and SMBs. Every project ships clean, documented, and production-ready.</p>
       <div class="hero-actions" style="margin-top:20px">
         <a href="mailto:kirthika.rajendran2005@gmail.com" class="btn-gold">Hire Me →</a>
-        <a href="https://wa.me/919XXXXXXXXX" target="_blank" class="btn-wa">💬 WhatsApp</a>
-        <a href="#flagship" class="btn-ghost">View Work ↓</a>
+        <a href="https://wa.me/918939618461" target="_blank" class="btn-wa">💬 WhatsApp</a>
+        <a href="#work" class="btn-ghost">View Work ↓</a>
       </div>
     </div>
     <div class="hero-right">
@@ -398,160 +419,55 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
   </div>
 </section>
 
+<!-- TECH STACK BADGES -->
+<div class="stack-section">
+  <div class="stack-inner">
+    <div class="stack-label">Tech Stack</div>
+    <div class="stack-badges">
+      <div class="badge hi"><span class="b-icon">⚛️</span>React</div>
+      <div class="badge hi"><span class="b-icon">🐍</span>Python</div>
+      <div class="badge hi"><span class="b-icon">✦</span>Claude AI</div>
+      <div class="badge hi"><span class="b-icon">🤖</span>Machine Learning</div>
+      <div class="badge hi"><span class="b-icon">📊</span>Data Analysis</div>
+      <div class="badge hi"><span class="b-icon">📈</span>Business Analytics</div>
+      <div class="badge"><span class="b-icon">🎨</span>Tailwind CSS</div>
+      <div class="badge"><span class="b-icon">📉</span>Scikit-learn</div>
+      <div class="badge"><span class="b-icon">🐼</span>Pandas</div>
+      <div class="badge"><span class="b-icon">🗄️</span>SQL</div>
+      <div class="badge"><span class="b-icon">📋</span>Power BI</div>
+      <div class="badge"><span class="b-icon">🚀</span>Streamlit</div>
+      <div class="badge"><span class="b-icon">🔧</span>JavaScript</div>
+      <div class="badge"><span class="b-icon">🌿</span>Git / GitHub</div>
+      <div class="badge"><span class="b-icon">📄</span>PDF Parsing</div>
+      <div class="badge"><span class="b-icon">💬</span>NLP</div>
+    </div>
+  </div>
+</div>
+
 <!-- MARQUEE -->
 <div class="marquee">
   <div class="marquee-inner">
     <span>React</span><span class="dot">✦</span><span>Python</span><span class="dot">✦</span>
-    <span>Claude AI</span><span class="dot">✦</span><span>Machine Learning</span><span class="dot">✦</span>
+    <span>Machine Learning</span><span class="dot">✦</span><span>Data Analysis</span><span class="dot">✦</span>
+    <span>Business Analytics</span><span class="dot">✦</span><span>Claude AI</span><span class="dot">✦</span>
     <span>Scikit-learn</span><span class="dot">✦</span><span>Pandas</span><span class="dot">✦</span>
-    <span>NumPy</span><span class="dot">✦</span><span>Data Analysis</span><span class="dot">✦</span>
-    <span>Business Analytics</span><span class="dot">✦</span><span>Power BI</span><span class="dot">✦</span>
-    <span>SQL</span><span class="dot">✦</span><span>Matplotlib</span><span class="dot">✦</span>
-    <span>Seaborn</span><span class="dot">✦</span><span>Streamlit</span><span class="dot">✦</span>
-    <span>Tailwind CSS</span><span class="dot">✦</span><span>Data Visualisation</span><span class="dot">✦</span>
-    <span>NLP</span><span class="dot">✦</span><span>Invoice Automation</span><span class="dot">✦</span>
-    <span>SaaS Interfaces</span><span class="dot">✦</span><span>KPI Dashboards</span><span class="dot">✦</span>
+    <span>Power BI</span><span class="dot">✦</span><span>SQL</span><span class="dot">✦</span>
+    <span>KPI Dashboards</span><span class="dot">✦</span><span>Sales Forecasting</span><span class="dot">✦</span>
+    <span>Invoice Automation</span><span class="dot">✦</span><span>SaaS Interfaces</span><span class="dot">✦</span>
+    <span>Streamlit</span><span class="dot">✦</span><span>Tailwind CSS</span><span class="dot">✦</span>
     <span>React</span><span class="dot">✦</span><span>Python</span><span class="dot">✦</span>
-    <span>Claude AI</span><span class="dot">✦</span><span>Machine Learning</span><span class="dot">✦</span>
+    <span>Machine Learning</span><span class="dot">✦</span><span>Data Analysis</span><span class="dot">✦</span>
+    <span>Business Analytics</span><span class="dot">✦</span><span>Claude AI</span><span class="dot">✦</span>
     <span>Scikit-learn</span><span class="dot">✦</span><span>Pandas</span><span class="dot">✦</span>
-    <span>NumPy</span><span class="dot">✦</span><span>Data Analysis</span><span class="dot">✦</span>
-    <span>Business Analytics</span><span class="dot">✦</span><span>Power BI</span><span class="dot">✦</span>
-    <span>SQL</span><span class="dot">✦</span><span>Matplotlib</span><span class="dot">✦</span>
-    <span>Seaborn</span><span class="dot">✦</span><span>Streamlit</span><span class="dot">✦</span>
-    <span>Tailwind CSS</span><span class="dot">✦</span><span>Data Visualisation</span><span class="dot">✦</span>
-    <span>NLP</span><span class="dot">✦</span><span>Invoice Automation</span><span class="dot">✦</span>
-    <span>SaaS Interfaces</span><span class="dot">✦</span><span>KPI Dashboards</span><span class="dot">✦</span>
+    <span>Power BI</span><span class="dot">✦</span><span>SQL</span><span class="dot">✦</span>
+    <span>KPI Dashboards</span><span class="dot">✦</span><span>Sales Forecasting</span><span class="dot">✦</span>
+    <span>Invoice Automation</span><span class="dot">✦</span><span>SaaS Interfaces</span><span class="dot">✦</span>
+    <span>Streamlit</span><span class="dot">✦</span><span>Tailwind CSS</span><span class="dot">✦</span>
   </div>
 </div>
 
-<!-- SKILLS SECTION -->
-<div style="background:var(--bg3);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
-  <div style="max-width:1360px;margin:0 auto;padding:70px 48px">
-    <div class="s-label" style="margin-bottom:40px">Skills & Expertise</div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:20px">
-
-      <!-- ML -->
-      <div style="background:var(--card);border:1px solid var(--border2);border-radius:4px;padding:26px;position:relative;overflow:hidden">
-        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--amber))"></div>
-        <div style="font-family:var(--ff-display);font-size:18px;color:var(--gold);margin-bottom:6px;letter-spacing:0.02em">Machine Learning</div>
-        <div style="font-family:var(--ff-mono);font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px;opacity:0.6">Predictive Modelling · AI</div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px">
-          <span class="stag hi">Scikit-learn</span>
-          <span class="stag hi">Regression</span>
-          <span class="stag hi">Classification</span>
-          <span class="stag hi">Forecasting</span>
-          <span class="stag">Random Forest</span>
-          <span class="stag">XGBoost</span>
-          <span class="stag">Decision Trees</span>
-          <span class="stag">SVM</span>
-          <span class="stag">K-Means Clustering</span>
-          <span class="stag">NLP</span>
-          <span class="stag">NLTK</span>
-          <span class="stag">Sentiment Analysis</span>
-          <span class="stag">Time Series</span>
-          <span class="stag">ARIMA</span>
-          <span class="stag">Model Evaluation</span>
-          <span class="stag">Cross Validation</span>
-          <span class="stag">Feature Engineering</span>
-          <span class="stag">Hyperparameter Tuning</span>
-        </div>
-      </div>
-
-      <!-- Data Analysis -->
-      <div style="background:var(--card);border:1px solid var(--border2);border-radius:4px;padding:26px;position:relative;overflow:hidden">
-        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--amber),var(--teal))"></div>
-        <div style="font-family:var(--ff-display);font-size:18px;color:var(--gold);margin-bottom:6px;letter-spacing:0.02em">Data Analysis</div>
-        <div style="font-family:var(--ff-mono);font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px;opacity:0.6">Exploration · Visualization</div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px">
-          <span class="stag hi">Python</span>
-          <span class="stag hi">Pandas</span>
-          <span class="stag hi">NumPy</span>
-          <span class="stag hi">SQL</span>
-          <span class="stag hi">EDA</span>
-          <span class="stag">Excel / Google Sheets</span>
-          <span class="stag">Matplotlib</span>
-          <span class="stag">Seaborn</span>
-          <span class="stag">Plotly</span>
-          <span class="stag">Data Cleaning</span>
-          <span class="stag">Data Wrangling</span>
-          <span class="stag">Missing Value Treatment</span>
-          <span class="stag">Outlier Detection</span>
-          <span class="stag">Correlation Analysis</span>
-          <span class="stag">Statistical Analysis</span>
-          <span class="stag">Pivot Tables</span>
-          <span class="stag">Data Storytelling</span>
-        </div>
-      </div>
-
-      <!-- Business Analytics -->
-      <div style="background:var(--card);border:1px solid var(--border2);border-radius:4px;padding:26px;position:relative;overflow:hidden">
-        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),var(--gold))"></div>
-        <div style="font-family:var(--ff-display);font-size:18px;color:var(--gold);margin-bottom:6px;letter-spacing:0.02em">Business Analytics</div>
-        <div style="font-family:var(--ff-mono);font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px;opacity:0.6">Insights · Strategy · Reporting</div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px">
-          <span class="stag hi">KPI Dashboards</span>
-          <span class="stag hi">Revenue Analysis</span>
-          <span class="stag hi">Power BI</span>
-          <span class="stag hi">Sales Forecasting</span>
-          <span class="stag">Streamlit</span>
-          <span class="stag">Business Insights</span>
-          <span class="stag">Churn Analysis</span>
-          <span class="stag">Customer Segmentation</span>
-          <span class="stag">Market Analysis</span>
-          <span class="stag">Competitor Analysis</span>
-          <span class="stag">Report Automation</span>
-          <span class="stag">ROI Analysis</span>
-          <span class="stag">Funnel Analysis</span>
-          <span class="stag">Cohort Analysis</span>
-          <span class="stag">A/B Testing</span>
-          <span class="stag">Business Reporting</span>
-          <span class="stag">Executive Dashboards</span>
-        </div>
-      </div>
-
-      <!-- Frontend & AI -->
-      <div style="background:var(--card);border:1px solid var(--border2);border-radius:4px;padding:26px;position:relative;overflow:hidden">
-        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--amber),var(--gold))"></div>
-        <div style="font-family:var(--ff-display);font-size:18px;color:var(--gold);margin-bottom:6px;letter-spacing:0.02em">Frontend & AI</div>
-        <div style="font-family:var(--ff-mono);font-size:9px;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px;opacity:0.6">React · Claude AI · SaaS</div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px">
-          <span class="stag hi">React</span>
-          <span class="stag hi">Claude AI</span>
-          <span class="stag hi">Tailwind CSS</span>
-          <span class="stag hi">JavaScript</span>
-          <span class="stag">HTML / CSS</span>
-          <span class="stag">Recharts</span>
-          <span class="stag">PDF Parsing</span>
-          <span class="stag">AI Integration</span>
-          <span class="stag">REST APIs</span>
-          <span class="stag">GitHub Pages</span>
-          <span class="stag">Vercel</span>
-          <span class="stag">Responsive Design</span>
-          <span class="stag">Component Design</span>
-          <span class="stag">Dark UI</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- TOOLS ROW -->
-    <div style="background:var(--card);border:1px solid var(--border);border-radius:4px;padding:22px 26px">
-      <div style="font-family:var(--ff-mono);font-size:9px;color:var(--gold);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:14px;opacity:0.7">Tools & Platforms</div>
-      <div style="display:flex;flex-wrap:wrap;gap:6px">
-        <span class="stag hi">Python</span><span class="stag hi">Git / GitHub</span><span class="stag hi">VS Code</span>
-        <span class="stag">Jupyter Notebook</span><span class="stag">Google Colab</span><span class="stag">Streamlit Cloud</span>
-        <span class="stag">Power BI</span><span class="stag">Excel</span><span class="stag">MySQL</span>
-        <span class="stag">SQLite</span><span class="stag">Postman</span><span class="stag">Figma (Basic)</span>
-        <span class="stag">Claude AI API</span><span class="stag">Anthropic</span><span class="stag">GitHub Pages</span>
-        <span class="stag">Vercel</span><span class="stag">npm / pip</span><span class="stag">JSON / CSV</span>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- FLAGSHIP — SMART SALES -->
-<div class="flagship-bg" id="flagship">
+<!-- FLAGSHIP -->
+<div style="background:var(--bg)" id="work">
   <div class="s-wrap" style="padding-bottom:0">
     <div class="s-label">★ Flagship Project</div>
     <div class="flagship-card reveal">
@@ -559,28 +475,23 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
         <div>
           <div class="fl-badge">★ Best Work · Python + ML</div>
           <h2 class="fl-title">Smart Sales<br/><em>Forecasting</em></h2>
-          <div class="fl-subtitle">AI-powered sales analytics & 90-day revenue prediction platform</div>
-
-          <!-- REAL METRICS -->
+          <div class="fl-sub">AI-powered sales analytics & 90-day revenue prediction</div>
           <div class="metrics-row">
-            <div class="metric"><span class="mv">87%</span><span class="ml">Forecast Accuracy</span></div>
-            <div class="metric"><span class="mv">90d</span><span class="ml">Prediction Range</span></div>
-            <div class="metric"><span class="mv">8+</span><span class="ml">KPIs Tracked</span></div>
-            <div class="metric"><span class="mv">PDF</span><span class="ml">Auto Reports</span></div>
+            <div class="metric"><span class="mv">87%</span><span class="ml">Accuracy</span></div>
+            <div class="metric"><span class="mv">90d</span><span class="ml">Forecast</span></div>
+            <div class="metric"><span class="mv">8+</span><span class="ml">KPIs</span></div>
+            <div class="metric"><span class="mv">PDF</span><span class="ml">Reports</span></div>
           </div>
-
-          <div class="fl-problem"><div class="fl-pl">Problem</div><p>Sales teams made decisions on gut feel — no revenue predictions, no unified KPI view, no way to plan ahead. Targets were missed because data was too late.</p></div>
-
+          <div class="problem-box"><div class="pb-l">Problem</div><p>Sales teams made decisions on gut feel — no revenue predictions, missed targets, no unified KPI view.</p></div>
           <div class="cs-grid">
-            <div class="cs-item"><div class="csl">Solution</div><div class="csv">ML-powered 90-day forecast + AI chatbot for natural language queries + What-If scenario simulator</div></div>
+            <div class="cs-item"><div class="csl">Solution</div><div class="csv">ML 90-day forecast + AI chatbot + What-If simulator</div></div>
             <div class="cs-item"><div class="csl">Stack</div><div class="csv">Python · Scikit-learn · Streamlit · Pandas · NLP</div></div>
-            <div class="cs-item"><div class="csl">Outcome</div><div class="csv">87% forecast accuracy · Real-time KPI tracking · PDF export · Live on Streamlit Cloud</div></div>
-            <div class="cs-item"><div class="csl">For</div><div class="csv">Sales managers, revenue teams, business owners needing data-driven planning</div></div>
+            <div class="cs-item"><div class="csl">Outcome</div><div class="csv">87% accuracy · 8+ KPIs tracked · PDF export · Live</div></div>
+            <div class="cs-item"><div class="csl">For</div><div class="csv">Sales managers, revenue teams, business owners</div></div>
           </div>
-
           <div class="fl-stack">
             <span class="stag hi">Python</span><span class="stag hi">Scikit-learn</span><span class="stag hi">NLP</span>
-            <span class="stag">Streamlit</span><span class="stag">Pandas</span><span class="stag">Matplotlib</span><span class="stag">Live ↗️</span>
+            <span class="stag">Streamlit</span><span class="stag">Pandas</span><span class="stag">Matplotlib</span>
           </div>
         </div>
         <div class="fl-links">
@@ -589,11 +500,11 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
         </div>
       </div>
       <div class="fl-mock">
-        <div class="mk-bar"><span>Sales Analytics · Live Dashboard</span><span class="mk-live">Live</span></div>
+        <div class="mk-bar"><span>Sales Analytics · Live</span><span class="mk-live">Live</span></div>
         <div class="kpi-row">
           <div class="kpi"><div class="kl">Revenue</div><div class="kv">₹4.2M</div><div class="kd up">↑ +23%</div></div>
           <div class="kpi"><div class="kl">Customers</div><div class="kv">1,847</div><div class="kd up">↑ +14%</div></div>
-          <div class="kpi"><div class="kl">Churn Rate</div><div class="kv">3.2%</div><div class="kd dn">↓ -0.8%</div></div>
+          <div class="kpi"><div class="kl">Churn</div><div class="kv">3.2%</div><div class="kd dn">↓ -0.8%</div></div>
         </div>
         <div class="chart-box" style="flex:1">
           <div class="chart-lbl">Monthly Revenue · Jan–Jun 2025</div>
@@ -606,28 +517,28 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
         <div class="kpi-row">
           <div class="kpi"><div class="kl">Q3 Forecast</div><div class="kv">₹5.1M</div><div class="kd up">↑ +21%</div></div>
           <div class="kpi"><div class="kl">Top Segment</div><div class="kv">Ent.</div><div class="kd up">+41%</div></div>
-          <div class="kpi"><div class="kl">Accuracy</div><div class="kv">87%</div><div class="kd up">ML Model</div></div>
+          <div class="kpi"><div class="kl">ML Accuracy</div><div class="kv">87%</div><div class="kd up">Validated</div></div>
         </div>
         <div class="ai-box">
           <div class="ai-l">✦ AI Insight · Auto Generated</div>
-          <p class="ai-p">Revenue up <strong>23%</strong> this month. Q3 peak predicted: <strong>₹5.1M</strong>. Enterprise accounts driving <strong>41%</strong> of total growth — recommend increasing outreach cadence by 30%.</p>
+          <p class="ai-p">Revenue up <strong>23%</strong>. Q3 peak: <strong>₹5.1M</strong>. Enterprise driving <strong>41%</strong> of growth — increase outreach by 30%.</p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- InvoiceIQ -->
-  <div style="max-width:1360px;margin:0 auto;padding:0 48px">
-    <div class="feat-card reveal" style="margin-top:40px;border-radius:6px;border:1px solid var(--border)">
+  <div class="feat-wrap">
+    <div class="feat-card reveal">
       <div class="fc-mock" style="border-right:1px solid var(--border)">
-        <div class="mk-bar"><span>InvoiceIQ · Automation Platform</span><span class="mk-amber">AI Processing</span></div>
+        <div class="mk-bar"><span>InvoiceIQ · Platform</span><span class="mk-amber">AI Processing</span></div>
         <div class="inv-up">
           <div class="iu-i">📄</div>
           <div class="iu-t">Drop PDF or Image Invoice</div>
-          <div class="iu-s">Claude AI extracting fields instantly...</div>
+          <div class="iu-s">Claude AI extracting fields...</div>
         </div>
         <div class="inv-fields">
-          <div class="inv-fl">Extracted Fields — Auto</div>
+          <div class="inv-fl">Extracted Fields</div>
           <div class="inv-grid">
             <div class="inv-f"><div class="ifl">Vendor</div><div class="ifv">Tata Supplies Ltd.</div></div>
             <div class="inv-f"><div class="ifl">Amount</div><div class="ifv">₹1,24,500</div></div>
@@ -636,26 +547,26 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
           </div>
         </div>
         <div class="kpi-row">
-          <div class="kpi"><div class="kl">Processed</div><div class="kv" style="font-size:18px">248</div><div class="kd up">invoices total</div></div>
+          <div class="kpi"><div class="kl">Processed</div><div class="kv" style="font-size:18px">248</div><div class="kd up">invoices</div></div>
           <div class="kpi"><div class="kl">Accuracy</div><div class="kv" style="font-size:18px">99%</div><div class="kd up">AI extract</div></div>
-          <div class="kpi"><div class="kl">Time Saved</div><div class="kv" style="font-size:18px">14h</div><div class="kd up">per week</div></div>
+          <div class="kpi"><div class="kl">Saved</div><div class="kv" style="font-size:18px">14h</div><div class="kd up">per week</div></div>
         </div>
       </div>
       <div class="fc-info">
         <div>
           <div class="fc-num">02</div>
           <div class="fc-tag amber">⚡ AI Automation · Claude AI</div>
-          <h2 class="fc-title">Invoice<em>IQ</em> — AI Invoice Automation</h2>
+          <h2 class="fc-title">Invoice<em>IQ</em> Automation</h2>
           <div class="fc-metrics">
             <div class="fc-m"><span class="fmv">99%</span><span class="fml">Accuracy</span></div>
             <div class="fc-m"><span class="fmv">14h</span><span class="fml">Saved/Week</span></div>
             <div class="fc-m"><span class="fmv">0</span><span class="fml">Manual Entry</span></div>
           </div>
-          <div class="fc-problem"><div class="fc-pl">Problem</div><p>Small businesses spent 14+ hours weekly manually copying vendor names, GST amounts, and line items from PDF invoices into Excel. Errors were common, time was wasted.</p></div>
+          <div class="problem-box"><div class="pb-l">Problem</div><p>Businesses spent 14+ hours weekly manually copying invoice data. Errors were common, time was wasted.</p></div>
           <div class="fc-cs">
-            <div class="fc-ci"><div class="cil">Solution</div><div class="civ">Upload any PDF/image → Claude AI extracts all fields in seconds. Bulk upload supported.</div></div>
-            <div class="fc-ci"><div class="cil">Stack</div><div class="civ">JavaScript · Claude AI · PDF Parsing · Analytics Dashboard</div></div>
-            <div class="fc-ci"><div class="cil">Outcome</div><div class="civ">99% extraction accuracy · 14 hours saved per week · Zero manual data entry</div></div>
+            <div class="fc-ci"><div class="cil">Solution</div><div class="civ">Upload PDF/image → Claude AI extracts all fields instantly. Bulk upload supported.</div></div>
+            <div class="fc-ci"><div class="cil">Stack</div><div class="civ">JavaScript · Claude AI · PDF Parsing · Analytics</div></div>
+            <div class="fc-ci"><div class="cil">Outcome</div><div class="civ">99% accuracy · 14h saved/week · Zero manual entry</div></div>
             <div class="fc-ci"><div class="cil">For</div><div class="civ">SMBs, CA firms, retail chains, logistics companies</div></div>
           </div>
           <div class="fc-stack">
@@ -669,26 +580,24 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Biz Dashboard -->
-  <div style="max-width:1360px;margin:0 auto;padding:0 48px 80px">
-    <div class="feat-card reveal" style="margin-top:24px;border-radius:6px;border:1px solid var(--border)">
+    <!-- Biz Dashboard -->
+    <div class="feat-card reveal" style="margin-bottom:0">
       <div class="fc-info">
         <div>
           <div class="fc-num">03</div>
-          <div class="fc-tag teal">✦ SaaS Platform · React + Claude AI</div>
-          <h2 class="fc-title">Biz <em>Dashboard</em> — AI Analytics</h2>
+          <div class="fc-tag teal">✦ SaaS · React + Claude AI</div>
+          <h2 class="fc-title">Biz <em>Dashboard</em> Analytics</h2>
           <div class="fc-metrics">
             <div class="fc-m"><span class="fmv">8+</span><span class="fml">KPIs Live</span></div>
-            <div class="fc-m"><span class="fmv">3</span><span class="fml">Segments</span></div>
             <div class="fc-m"><span class="fmv">AI</span><span class="fml">Insights</span></div>
+            <div class="fc-m"><span class="fmv">Real</span><span class="fml">Time</span></div>
           </div>
-          <div class="fc-problem"><div class="fc-pl">Problem</div><p>SMB owners had revenue and order data scattered across 5+ spreadsheets — no single view, no trend detection, no way to act on insights before it was too late.</p></div>
+          <div class="problem-box"><div class="pb-l">Problem</div><p>SMB owners had revenue data across 5+ spreadsheets — no unified view, no trend detection, no actionable insights.</p></div>
           <div class="fc-cs">
-            <div class="fc-ci"><div class="cil">Solution</div><div class="civ">React SaaS + Claude AI delivering real-time KPI tracking, trend analysis, and AI growth recommendations</div></div>
-            <div class="fc-ci"><div class="cil">Stack</div><div class="civ">React · Claude AI · JavaScript · Recharts · Tailwind CSS</div></div>
-            <div class="fc-ci"><div class="cil">Outcome</div><div class="civ">Unified BI in one dashboard · AI-generated weekly insights · Real-time tracking across 8+ KPIs</div></div>
+            <div class="fc-ci"><div class="cil">Solution</div><div class="civ">React SaaS + Claude AI delivering real-time KPIs, trends, and weekly AI growth recommendations</div></div>
+            <div class="fc-ci"><div class="cil">Stack</div><div class="civ">React · Claude AI · JavaScript · Recharts · Tailwind</div></div>
+            <div class="fc-ci"><div class="cil">Outcome</div><div class="civ">8+ KPIs tracked · AI weekly insights · Real-time segment breakdown</div></div>
             <div class="fc-ci"><div class="cil">For</div><div class="civ">SMB owners, ops managers, retail chains, D2C brands</div></div>
           </div>
           <div class="fc-stack">
@@ -702,7 +611,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
         </div>
       </div>
       <div class="fc-mock">
-        <div class="mk-bar"><span>Biz Dashboard · SMB Analytics</span><span style="color:var(--teal);display:flex;align-items:center;gap:5px"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal);display:inline-block;animation:pulse 1.8s ease infinite"></span>AI Active</span></div>
+        <div class="mk-bar"><span>Biz Dashboard · SMB</span><span class="mk-teal">AI Active</span></div>
         <div class="kpi-row">
           <div class="kpi"><div class="kl">Revenue</div><div class="kv">₹8.7M</div><div class="kd up">↑ +31%</div></div>
           <div class="kpi"><div class="kl">Orders</div><div class="kv">3,241</div><div class="kd up">↑ +18%</div></div>
@@ -717,19 +626,20 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
             <div class="b" style="height:91%;background:var(--teal)"></div>
           </div>
         </div>
-        <div style="background:var(--card);border:1px solid var(--border);border-radius:4px;padding:13px">
-          <div style="font-family:var(--ff-mono);font-size:8px;color:var(--teal);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;opacity:0.7">Top Segments · This Quarter</div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:3px;padding:12px">
+          <div style="font-family:var(--ff-m);font-size:8px;color:var(--teal);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;opacity:0.7">Top Segments</div>
           <div class="seg"><span class="sl2">Retail</span><div class="str"><div class="sf" style="width:78%;background:var(--teal)"></div></div><span class="sv">78%</span></div>
           <div class="seg"><span class="sl2">Wholesale</span><div class="str"><div class="sf" style="width:54%;background:rgba(74,158,142,0.5)"></div></div><span class="sv">54%</span></div>
           <div class="seg"><span class="sl2">Online</span><div class="str"><div class="sf" style="width:41%;background:rgba(74,158,142,0.3)"></div></div><span class="sv">41%</span></div>
         </div>
         <div class="ai-box" style="border-color:rgba(74,158,142,0.2);background:rgba(74,158,142,0.03)">
-          <div class="ai-l" style="color:var(--teal)">✦ Claude AI Weekly Insight</div>
-          <p class="ai-p" style="">Retail up <strong style="color:var(--teal)">31%</strong>. Online has highest growth potential — increase Q3 digital spend by 20% to capture ₹1.2M additional revenue.</p>
+          <div class="ai-l" style="color:var(--teal)">✦ Claude AI Insight</div>
+          <p class="ai-p">Retail up <strong style="color:var(--teal)">31%</strong>. Online has highest growth potential — increase Q3 digital spend 20% to capture ₹1.2M more.</p>
         </div>
       </div>
     </div>
   </div>
+  <div style="height:80px"></div>
 </div>
 
 <!-- ALL PROJECTS -->
@@ -737,7 +647,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
   <div class="s-wrap">
     <div class="s-label">All Projects</div>
     <div class="proj-grid">
-
       <div class="pcard reveal">
         <div class="pcard-num">001</div>
         <h3 class="pcard-title">ResumeIQ Pro</h3>
@@ -747,14 +656,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
           <div class="pm"><span class="pmv">PDF</span><span class="pml">Report</span></div>
         </div>
         <div class="pcard-cs">
-          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">Job seekers rejected by ATS without knowing why — no score, no feedback, no fix.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">ATS scoring, keyword density analysis, skill gap detection + downloadable PDF report.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">Actionable resume score with specific improvements in under 30 seconds.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">Job seekers rejected by ATS without knowing why.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">ATS scoring, keyword density, skill gap detection + PDF report.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">Actionable score with specific improvements in 30 seconds.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">React</span><span class="ptag hi">Claude AI</span><span class="ptag">JavaScript</span><span class="ptag">Tailwind</span></div>
         <div class="pcard-foot"><a href="https://github.com/kiru-builds/Resumeiq-pro" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
-
       <div class="pcard reveal">
         <div class="pcard-num">002</div>
         <h3 class="pcard-title">Career Navigator</h3>
@@ -764,14 +672,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
           <div class="pm"><span class="pmv">Live</span><span class="pml">Deployed</span></div>
         </div>
         <div class="pcard-cs">
-          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">Generic career advice didn't map to real skill gaps or job market reality.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">AI maps job paths, identifies actual skill gaps, generates personalised 12-week roadmap.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">87 roles matched per session · Live on Streamlit Cloud · Used by students.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">Generic career advice didn't map to real skill gaps.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">AI maps job paths, identifies skill gaps, generates 12-week roadmap.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">87 roles matched · Live on Streamlit Cloud.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">Python</span><span class="ptag hi">AI / LLM</span><span class="ptag">Streamlit</span><span class="ptag">Live</span></div>
         <div class="pcard-foot"><a href="https://github.com/kiru-builds/career-navigator-app" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
-
       <div class="pcard reveal">
         <div class="pcard-num">003</div>
         <h3 class="pcard-title">Smart Sales Forecasting</h3>
@@ -781,14 +688,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
           <div class="pm"><span class="pmv">Live</span><span class="pml">Deployed</span></div>
         </div>
         <div class="pcard-cs">
-          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">No reliable revenue forecast — decisions made on gut feel, targets missed.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">ML pipeline: 90-day prediction + AI chatbot + What-If simulator + PDF reports.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">87% accuracy · Tracks 8+ KPIs · Auto PDF reports · Deployed on Streamlit.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">No reliable revenue forecast — gut-feel decisions, missed targets.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">ML pipeline: 90-day prediction + AI chatbot + What-If simulator.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">87% accuracy · 8+ KPIs · Auto PDF reports · Live.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">Python</span><span class="ptag hi">ML</span><span class="ptag">Streamlit</span><span class="ptag">Pandas</span></div>
         <div class="pcard-foot"><a href="https://github.com/kiru-builds/smart-sales-forecasting" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
-
       <div class="pcard reveal">
         <div class="pcard-num">004</div>
         <h3 class="pcard-title">InvoiceIQ</h3>
@@ -798,14 +704,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
           <div class="pm"><span class="pmv">0</span><span class="pml">Manual Work</span></div>
         </div>
         <div class="pcard-cs">
-          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">14 hours/week wasted on manual invoice data entry from PDFs and images.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">Claude AI extracts vendor, amount, GST, line items from any PDF/image instantly.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">99% accuracy · 14h saved/week · Bulk processing · Analytics dashboard.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">14 hours/week wasted on manual invoice data entry.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">Claude AI extracts all invoice fields from any PDF/image instantly.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">99% accuracy · 14h saved/week · Bulk processing.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">Claude AI</span><span class="ptag hi">JavaScript</span><span class="ptag">PDF</span><span class="ptag">Analytics</span></div>
         <div class="pcard-foot"><a href="https://github.com/kiru-builds/invoice-iq" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
-
       <div class="pcard reveal">
         <div class="pcard-num">005</div>
         <h3 class="pcard-title">Biz Dashboard</h3>
@@ -815,21 +720,88 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
           <div class="pm"><span class="pmv">Real</span><span class="pml">Time</span></div>
         </div>
         <div class="pcard-cs">
-          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">SMB data in silos — no unified revenue, order, and customer view.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">React SaaS + Claude AI delivering unified KPIs, trends, and weekly AI recommendations.</span></div>
-          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">8+ KPIs tracked · AI-generated weekly insights · Real-time segment breakdown.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">SMB data in 5+ spreadsheets — no unified view.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">React SaaS + Claude AI delivering unified KPIs and AI recommendations.</span></div>
+          <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">8+ KPIs · AI weekly insights · Real-time segments.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">React</span><span class="ptag hi">Claude AI</span><span class="ptag">Recharts</span><span class="ptag">Tailwind</span></div>
         <div class="pcard-foot"><a href="https://github.com/kiru-builds/biz-dashboard" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
-
       <div class="pcard cta-p">
         <div class="pcard-num" style="color:var(--dim)">NEXT</div>
         <h3 class="pcard-title">Your Project Here.</h3>
-        <p class="pcard-desc" style="font-size:13px;color:var(--muted);font-weight:300;line-height:1.7">Have a dashboard, automation tool, or SaaS idea? I'll scope it, build it, and ship it — fast.</p>
+        <p style="font-size:13px;color:var(--muted);font-weight:300;line-height:1.7;margin-top:8px">Have a dashboard, automation tool, or SaaS idea? Let's scope it and ship it fast.</p>
         <a href="mailto:kirthika.rajendran2005@gmail.com" class="btn-gold" style="margin-top:auto;width:fit-content;font-size:10px;padding:11px 18px">Start a Project →</a>
       </div>
+    </div>
+  </div>
+</div>
 
+<!-- SKILLS -->
+<div class="skills-bg" id="skills">
+  <div class="s-wrap">
+    <div class="s-label">Skills & Expertise</div>
+    <div class="skill-grid reveal">
+      <div class="skill-card">
+        <div class="skill-title">Machine Learning</div>
+        <div class="skill-sub">Predictive Modelling · AI</div>
+        <div class="skill-tags">
+          <span class="stag hi">Scikit-learn</span><span class="stag hi">Regression</span><span class="stag hi">Classification</span>
+          <span class="stag hi">Forecasting</span><span class="stag">Random Forest</span><span class="stag">XGBoost</span>
+          <span class="stag">Decision Trees</span><span class="stag">SVM</span><span class="stag">K-Means</span>
+          <span class="stag">NLP</span><span class="stag">NLTK</span><span class="stag">Sentiment Analysis</span>
+          <span class="stag">Time Series</span><span class="stag">ARIMA</span><span class="stag">Feature Engineering</span>
+          <span class="stag">Cross Validation</span><span class="stag">Hyperparameter Tuning</span>
+        </div>
+      </div>
+      <div class="skill-card" style="--c:var(--amber)">
+        <div class="skill-title">Data Analysis</div>
+        <div class="skill-sub">Exploration · Visualization</div>
+        <div class="skill-tags">
+          <span class="stag hi">Python</span><span class="stag hi">Pandas</span><span class="stag hi">NumPy</span>
+          <span class="stag hi">SQL</span><span class="stag hi">EDA</span><span class="stag">Excel / Google Sheets</span>
+          <span class="stag">Matplotlib</span><span class="stag">Seaborn</span><span class="stag">Plotly</span>
+          <span class="stag">Data Cleaning</span><span class="stag">Data Wrangling</span><span class="stag">Outlier Detection</span>
+          <span class="stag">Correlation Analysis</span><span class="stag">Statistical Analysis</span>
+          <span class="stag">Pivot Tables</span><span class="stag">Data Storytelling</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Business Analytics</div>
+        <div class="skill-sub">Insights · Strategy · Reporting</div>
+        <div class="skill-tags">
+          <span class="stag hi">KPI Dashboards</span><span class="stag hi">Revenue Analysis</span>
+          <span class="stag hi">Power BI</span><span class="stag hi">Sales Forecasting</span>
+          <span class="stag">Streamlit</span><span class="stag">Churn Analysis</span>
+          <span class="stag">Customer Segmentation</span><span class="stag">Market Analysis</span>
+          <span class="stag">ROI Analysis</span><span class="stag">Funnel Analysis</span>
+          <span class="stag">Cohort Analysis</span><span class="stag">A/B Testing</span>
+          <span class="stag">Report Automation</span><span class="stag">Executive Dashboards</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Frontend & AI</div>
+        <div class="skill-sub">React · Claude AI · SaaS</div>
+        <div class="skill-tags">
+          <span class="stag hi">React</span><span class="stag hi">Claude AI</span>
+          <span class="stag hi">Tailwind CSS</span><span class="stag hi">JavaScript</span>
+          <span class="stag">HTML / CSS</span><span class="stag">Recharts</span>
+          <span class="stag">PDF Parsing</span><span class="stag">REST APIs</span>
+          <span class="stag">GitHub Pages</span><span class="stag">Vercel</span>
+          <span class="stag">Responsive Design</span><span class="stag">Dark UI</span>
+        </div>
+      </div>
+    </div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:4px;padding:20px 24px;margin-top:16px">
+      <div style="font-family:var(--ff-m);font-size:9px;color:var(--gold);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:12px;opacity:0.7">Tools & Platforms</div>
+      <div class="skill-tags">
+        <span class="stag hi">Python</span><span class="stag hi">Git / GitHub</span><span class="stag hi">VS Code</span>
+        <span class="stag">Jupyter Notebook</span><span class="stag">Google Colab</span><span class="stag">Streamlit Cloud</span>
+        <span class="stag">Power BI</span><span class="stag">MySQL</span><span class="stag">SQLite</span>
+        <span class="stag">Excel</span><span class="stag">Postman</span><span class="stag">Figma (Basic)</span>
+        <span class="stag">Claude AI API</span><span class="stag">GitHub Pages</span><span class="stag">Vercel</span>
+        <span class="stag">npm / pip</span><span class="stag">JSON / CSV</span>
+      </div>
     </div>
   </div>
 </div>
@@ -840,25 +812,26 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
     <div class="s-label">What I Build</div>
     <h2 class="svc-heading">Services &amp;<br/><em>Expertise.</em></h2>
     <div class="svc-grid reveal">
-      <div class="svc-card"><div class="svc-icon">📊</div><div class="svc-n">01 / 03</div><h3 class="svc-t">Analytics Dashboards</h3><p class="svc-d">Custom KPI dashboards with real-time data, ML forecasting, and interactive charts. For sales, ops, and product teams who need decisions — not data dumps.</p><ul class="svc-list"><li>Revenue & conversion tracking</li><li>90-day ML forecasting</li><li>8+ KPIs in one view</li><li>PDF / CSV export</li><li>Streamlit or React delivery</li></ul></div>
-      <div class="svc-card"><div class="svc-icon">⚡</div><div class="svc-n">02 / 03</div><h3 class="svc-t">AI Automation Tools</h3><p class="svc-d">Claude AI-powered tools that eliminate manual work — invoice extraction, document processing, data entry automation. Save 10+ hours per week for your team.</p><ul class="svc-list"><li>Invoice & document automation</li><li>PDF / image data extraction</li><li>Bulk processing pipelines</li><li>Analytics on extracted data</li><li>Full handoff + documentation</li></ul></div>
-      <div class="svc-card"><div class="svc-icon">⚛️</div><div class="svc-n">03 / 03</div><h3 class="svc-t">SaaS UI & React Build</h3><p class="svc-d">Production-ready SaaS interfaces with React & Tailwind. Dashboards, admin panels, onboarding flows — from wireframe to deployed product, fast.</p><ul class="svc-list"><li>Component-based architecture</li><li>Dark & light themes</li><li>Mobile responsive</li><li>Claude AI integration</li><li>GitHub Pages / Vercel deploy</li></ul></div>
+      <div class="svc-card"><div class="svc-icon">📊</div><div class="svc-n">01 / 03</div><h3 class="svc-t">Analytics Dashboards</h3><p class="svc-d">Custom KPI dashboards with real-time data, ML forecasting, and interactive charts. For sales, ops, and product teams who need decisions fast.</p><ul class="svc-list"><li>Revenue & conversion tracking</li><li>90-day ML forecasting</li><li>8+ KPIs in one view</li><li>PDF / CSV export</li><li>Streamlit or React delivery</li></ul></div>
+      <div class="svc-card"><div class="svc-icon">⚡</div><div class="svc-n">02 / 03</div><h3 class="svc-t">AI Automation Tools</h3><p class="svc-d">Claude AI-powered tools that eliminate manual work — invoice extraction, document processing, data entry automation. Save 10+ hours per week.</p><ul class="svc-list"><li>Invoice & document automation</li><li>PDF / image data extraction</li><li>Bulk processing pipelines</li><li>Analytics on extracted data</li><li>Full handoff + documentation</li></ul></div>
+      <div class="svc-card"><div class="svc-icon">⚛️</div><div class="svc-n">03 / 03</div><h3 class="svc-t">SaaS UI & React Build</h3><p class="svc-d">Production-ready SaaS interfaces with React & Tailwind. Dashboards, admin panels, onboarding flows — wireframe to deployed product, fast.</p><ul class="svc-list"><li>Component-based architecture</li><li>Dark & light themes</li><li>Mobile responsive</li><li>Claude AI integration</li><li>GitHub Pages / Vercel deploy</li></ul></div>
     </div>
     <div class="process-row reveal">
-      <div class="ps"><div class="ps-n">01</div><div class="ps-t">Discovery</div><div class="ps-d">Goals, data sources, and what success looks like for your team.</div></div>
-      <div class="ps"><div class="ps-n">02</div><div class="ps-t">Design & Scope</div><div class="ps-d">Wireframe + stack confirmation before any code is written.</div></div>
-      <div class="ps"><div class="ps-n">03</div><div class="ps-t">Build & Iterate</div><div class="ps-d">Weekly updates, GitHub access, live preview throughout.</div></div>
-      <div class="ps"><div class="ps-n">04</div><div class="ps-t">Ship & Support</div><div class="ps-d">Full deploy, docs, 2 weeks post-launch support included.</div></div>
+      <div class="ps"><div class="ps-n">01</div><div class="ps-t">Discovery</div><div class="ps-d">Goals, data sources, and what success looks like.</div></div>
+      <div class="ps"><div class="ps-n">02</div><div class="ps-t">Design & Scope</div><div class="ps-d">Wireframe + stack before any code is written.</div></div>
+      <div class="ps"><div class="ps-n">03</div><div class="ps-t">Build & Iterate</div><div class="ps-d">Weekly updates, GitHub access, live preview.</div></div>
+      <div class="ps"><div class="ps-n">04</div><div class="ps-t">Ship & Support</div><div class="ps-d">Full deploy, docs, 2 weeks support included.</div></div>
     </div>
   </div>
 </div>
+
 <!-- ABOUT -->
 <div class="about-bg" id="about">
   <div class="s-wrap">
     <div class="s-label">About</div>
     <div class="about-grid">
       <div class="rl">
-        <p class="big-q">"I don't just write code — I build tools that <span>make businesses run better.</span>"</p>
+        <p class="big-q">"I build tools that <span>make businesses run better.</span>"</p>
         <p class="about-body">I'm <strong>Kirthika Rajendran</strong>, an AI & Data Developer from <strong>Chennai, India</strong> specialising in analytics dashboards, invoice automation, and SaaS interfaces.<br/><br/>Every project I ship is <strong>open-source on GitHub</strong>, fully documented, and production-ready. I combine ML engineering with clean React front-ends to build tools that look as good as they perform.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
           <a href="mailto:kirthika.rajendran2005@gmail.com" class="btn-gold">Get In Touch →</a>
@@ -867,7 +840,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
       </div>
       <div class="reveal">
         <div class="trust-list">
-          <div class="ti"><div class="ti-n">87%</div><div class="ti-b"><div class="ti-t">ML Forecast Accuracy</div><div class="ti-d">Achieved on Smart Sales Forecasting — 90-day revenue prediction with Scikit-learn, validated against real data.</div></div></div>
+          <div class="ti"><div class="ti-n">87%</div><div class="ti-b"><div class="ti-t">ML Forecast Accuracy</div><div class="ti-d">Achieved on Smart Sales Forecasting — 90-day prediction with Scikit-learn, validated against real sales data.</div></div></div>
           <div class="ti"><div class="ti-n">14h</div><div class="ti-b"><div class="ti-t">Saved Per Week</div><div class="ti-d">InvoiceIQ eliminates 14+ hours of manual invoice data entry per week for SMBs.</div></div></div>
           <div class="ti"><div class="ti-n">5+</div><div class="ti-b"><div class="ti-t">AI-Powered Projects</div><div class="ti-d">Claude AI, ML models, and NLP integrated into every project — not just a pretty UI.</div></div></div>
           <div class="ti"><div class="ti-n">1–3w</div><div class="ti-b"><div class="ti-t">Typical Delivery</div><div class="ti-d">Most projects scoped and delivered in 1 to 3 weeks. Fast without cutting corners.</div></div></div>
@@ -876,7 +849,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
           <div>
             <div class="gh-t">kiru-builds</div>
             <div class="gh-s">Active · Open source · Chennai, India</div>
-            <a href="https://github.com/kiru-builds" target="_blank" style="font-family:var(--ff-mono);font-size:10px;color:var(--gold);text-decoration:none;letter-spacing:0.08em;display:inline-flex;align-items:center;gap:4px;margin-top:10px;opacity:0.8">↗️ View Profile</a>
+            <a href="https://github.com/kiru-builds" target="_blank" style="font-family:var(--ff-m);font-size:10px;color:var(--gold);text-decoration:none;letter-spacing:0.08em;display:inline-flex;align-items:center;gap:4px;margin-top:10px;opacity:0.8">↗️ View Profile</a>
           </div>
           <div class="gh-nums">
             <div class="ghn"><div class="gnv">11</div><div class="gnl">Repos</div></div>
@@ -889,68 +862,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 48px
   </div>
 </div>
 
-<!-- CONTACT — IMPROVED ONE-CLICK -->
+<!-- CONTACT -->
 <div class="cta-bg" id="contact">
   <div class="cta-inner">
-    <div class="cta-avail">Open for Freelance Work</div>
-    <h2 class="cta-h">Let's build<br/>something <em>great.</em></h2>
-    <p class="cta-sub">Open to freelance projects, internships, and full-time roles. Based in Chennai — available worldwide remotely. Response within 24 hours.</p>
-
-    <div class="contact-grid reveal">
-      <!-- ONE-CLICK CONTACT BUTTONS -->
-      <div class="contact-buttons">
-        <a href="mailto:kirthika.rajendran2005@gmail.com" class="c-btn email">
-          <div class="cb-icon">✉️</div>
-          <div><div class="cb-label">Email</div><div class="cb-val">kirthika.rajendran2005@gmail.com</div></div>
-        </a>
-        <a href="https://wa.me/919XXXXXXXXX" target="_blank" class="c-btn wa">
-          <div class="cb-icon">💬</div>
-          <div><div class="cb-label">WhatsApp</div><div class="cb-val">Message me directly</div></div>
-        </a>
-        <a href="https://www.linkedin.com/in/kirthika-rajendran-0303383b4" target="_blank" class="c-btn li">
-          <div class="cb-icon">💼</div>
-          <div><div class="cb-label">LinkedIn</div><div class="cb-val">kirthika-rajendran</div></div>
-        </a>
-        <a href="https://github.com/kiru-builds" target="_blank" class="c-btn gh">
-          <div class="cb-icon">⌥</div>
-          <div><div class="cb-label">GitHub</div><div class="cb-val">kiru-builds</div></div>
-        </a>
-      </div>
-
-      <!-- WHAT YOU GET -->
-      <div class="contact-right">
-        <div class="contact-info-box">
-          <div class="cib-title">What You Get</div>
-          <div class="cib-items">
-            <div class="cib-item"><div class="ci-dot"></div><span>Working product delivered in <strong>1–3 weeks</strong></span></div>
-            <div class="cib-item"><div class="ci-dot"></div><span>Clean, <strong>documented code</strong> you own</span></div>
-            <div class="cib-item"><div class="ci-dot"></div><span><strong>Full deployment</strong> on GitHub Pages or Vercel</span></div>
-            <div class="cib-item"><div class="ci-dot"></div><span><strong>2 weeks</strong> post-launch support</span></div>
-            <div class="cib-item"><div class="ci-dot"></div><span>Weekly progress updates via <strong>WhatsApp</strong></span></div>
-          </div>
-          <div class="cib-rates">
-            <div class="cr-title">Starting Rates</div>
-            <div class="rate-row"><span class="rr-type">Small Dashboard / Tool</span><span class="rr-price">₹8K–₹20K</span></div>
-            <div class="rate-row"><span class="rr-type">AI Automation Tool</span><span class="rr-price">₹20K–₹45K</span></div>
-            <div class="rate-row"><span class="rr-type">Full SaaS Platform</span><span class="rr-price">₹40K–₹80K</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <div class="f-logo">KR.</div>
-  <div class="f-copy">© 2025 Kirthika Rajendran · Chennai, India · AI & Data Developer</div>
-  <div class="f-status"><div class="fdot"></div>Available for hire · Response in 24h</div>
-</footer>
-
-<script>
-var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:0.1});
-document.querySelectorAll('.reveal,.rl').forEach(function(el){obs.observe(el)});
-var bObs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.querySelectorAll('.b').forEach(function(b,i){var h=b.style.height;b.style.height='0%';b.style.transition='height 0.7s '+(i*0.09)+'s ease';setTimeout(function(){b.style.height=h},80)})}})},{threshold:0.3});
-document.querySelectorAll('.flagship-card,.feat-card').forEach(function(el){bObs.observe(el)});
-</script>
-</body>
-</html>
+    <div class="cta-avai
