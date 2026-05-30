@@ -332,10 +332,12 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
 .fdot{width:5px;height:5px;border-radius:50%;background:var(--green);animation:pulse 2s ease infinite}
 
 /* REVEAL */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.8s ease,transform 0.8s ease}
-.reveal.visible{opacity:1;transform:none}
-.rl{opacity:0;transform:translateX(-24px);transition:opacity 0.8s ease,transform 0.8s ease}
-.rl.visible{opacity:1;transform:none}
+.reveal{opacity:1;transform:none;transition:opacity 0.8s ease,transform 0.8s ease}
+.reveal.hidden{opacity:0;transform:translateY(24px)}
+.reveal.hidden.visible{opacity:1;transform:none}
+.rl{opacity:1;transform:none;transition:opacity 0.8s ease,transform 0.8s ease}
+.rl.hidden{opacity:0;transform:translateX(-24px)}
+.rl.hidden.visible{opacity:1;transform:none}
 
 @media(max-width:960px){
   nav{padding:14px 20px}.nav-links{display:none}
