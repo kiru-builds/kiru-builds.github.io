@@ -17,7 +17,7 @@
   --ff-d:'Bebas Neue',sans-serif;--ff-s:'Instrument Serif',serif;
   --ff-m:'IBM Plex Mono',monospace;--ff-b:'Outfit',sans-serif;
 }
-,::before,*::after{box-sizing:border-box;margin:0;padding:0}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--ff-b);font-size:16px;line-height:1.6;overflow-x:hidden}
 body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9998;opacity:0.7}
@@ -497,7 +497,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           </div>
         </div>
         <div class="fl-links">
-          <a href="https://github.com/kiru-builds/smart-sales-forecasting" target="_blank" class="fl-link">↗️ GitHub</a>
+          <a href="https://github.com/kiru-builds/smart-sales-forecasting" target="_blank" class="fl-link">↗ GitHub</a>
           <a href="#contact" class="fl-link dim">→ Build similar for me</a>
         </div>
       </div>
@@ -577,7 +577,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           </div>
         </div>
         <div class="fc-links">
-          <a href="https://github.com/kiru-builds/invoice-iq" target="_blank" class="fc-link">↗️ GitHub</a>
+          <a href="https://github.com/kiru-builds/invoice-iq" target="_blank" class="fc-link">↗ GitHub</a>
           <a href="#contact" class="fc-link dim">→ Build for my business</a>
         </div>
       </div>
@@ -608,7 +608,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           </div>
         </div>
         <div class="fc-links">
-          <a href="https://github.com/kiru-builds/biz-dashboard" target="_blank" class="fc-link">↗️ GitHub</a>
+          <a href="https://github.com/kiru-builds/biz-dashboard" target="_blank" class="fc-link">↗ GitHub</a>
           <a href="#contact" class="fc-link dim">→ Build for my business</a>
         </div>
       </div>
@@ -649,6 +649,77 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
   <div class="s-wrap">
     <div class="s-label">All Projects</div>
     <div class="proj-grid">
+
+      <!-- REVORA CUSTOMS — REAL CLIENT PROJECT -->
+      <div class="pcard reveal" style="border:1px solid rgba(212,168,94,0.35);background:linear-gradient(135deg,rgba(212,168,94,0.06) 0%,var(--bg2) 100%);grid-column:span 2;display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;border-radius:4px;overflow:hidden">
+        <div style="padding:28px 26px;display:flex;flex-direction:column;gap:14px;border-right:1px solid var(--border)">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="pcard-num" style="color:var(--dim)">CLIENT 01</div>
+            <div style="font-family:var(--ff-m);font-size:9px;letter-spacing:0.1em;text-transform:uppercase;background:rgba(212,168,94,0.12);border:1px solid rgba(212,168,94,0.3);color:var(--gold);padding:3px 8px;border-radius:2px">★ Real Client Work</div>
+          </div>
+          <h3 class="pcard-title" style="font-size:28px">Revora Customs</h3>
+          <p style="font-size:12px;color:var(--muted);font-family:var(--ff-m);letter-spacing:0.04em">Chennai's Premium Superbike Service Website</p>
+          <div class="pcard-metrics">
+            <div class="pm"><span class="pmv">Live</span><span class="pml">Deployed</span></div>
+            <div class="pm"><span class="pmv">5+</span><span class="pml">Bike Brands</span></div>
+            <div class="pm"><span class="pmv">Book</span><span class="pml">System</span></div>
+          </div>
+          <div class="pcard-cs">
+            <div class="pcs-row"><span class="pcs-l">Client</span><span class="pcs-v">Revora Customs — premium superbike service centre, Chennai</span></div>
+            <div class="pcs-row"><span class="pcs-l">Problem</span><span class="pcs-v">No online presence — customers couldn't find services, pricing, or book appointments for BMW, Ducati, Kawasaki, Triumph & Aprilia bikes.</span></div>
+            <div class="pcs-row"><span class="pcs-l">Solution</span><span class="pcs-v">Full website with services listing, ECU tuning info, booking system, and free pickup & drop feature.</span></div>
+            <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">Live on Cloudflare Pages · Online booking enabled · Professional brand presence established.</span></div>
+          </div>
+          <div class="pcard-stack">
+            <span class="ptag hi">HTML/CSS</span><span class="ptag hi">JavaScript</span>
+            <span class="ptag">Cloudflare Pages</span><span class="ptag">Responsive</span><span class="ptag">Booking System</span>
+          </div>
+          <div class="pcard-foot">
+            <a href="https://revoracustoms.pages.dev" target="_blank" class="plink">↗ Live Site</a>
+            <a href="#contact" class="plink dim">→ Build similar</a>
+          </div>
+        </div>
+        <!-- WEBSITE PREVIEW MOCKUP -->
+        <div style="background:var(--bg);padding:24px;display:flex;flex-direction:column;gap:10px">
+          <div style="font-family:var(--ff-m);font-size:10px;color:var(--muted);display:flex;justify-content:space-between;padding-bottom:10px;border-bottom:1px solid var(--border)">
+            <span>revoracustoms.pages.dev</span>
+            <span style="color:var(--teal);display:flex;align-items:center;gap:4px"><span style="width:5px;height:5px;border-radius:50%;background:var(--teal);display:inline-block"></span>Live</span>
+          </div>
+          <!-- Hero section mockup -->
+          <div style="background:var(--card);border:1px solid var(--border);border-radius:4px;padding:18px;text-align:center">
+            <div style="font-family:var(--ff-d);font-size:22px;color:var(--gold);letter-spacing:0.1em;margin-bottom:4px">REVORA</div>
+            <div style="font-family:var(--ff-m);font-size:9px;color:var(--muted);letter-spacing:0.1em;margin-bottom:12px">ELEVATE EVERY RIDE · CHENNAI</div>
+            <div style="display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:12px">
+              <span style="font-family:var(--ff-m);font-size:8px;color:var(--muted);border:1px solid var(--border);padding:2px 7px;border-radius:2px">BMW</span>
+              <span style="font-family:var(--ff-m);font-size:8px;color:var(--muted);border:1px solid var(--border);padding:2px 7px;border-radius:2px">Ducati</span>
+              <span style="font-family:var(--ff-m);font-size:8px;color:var(--muted);border:1px solid var(--border);padding:2px 7px;border-radius:2px">Kawasaki</span>
+              <span style="font-family:var(--ff-m);font-size:8px;color:var(--muted);border:1px solid var(--border);padding:2px 7px;border-radius:2px">Triumph</span>
+              <span style="font-family:var(--ff-m);font-size:8px;color:var(--muted);border:1px solid var(--border);padding:2px 7px;border-radius:2px">Aprilia</span>
+            </div>
+            <div style="background:var(--gold);color:var(--bg);font-family:var(--ff-m);font-size:9px;letter-spacing:0.1em;padding:6px 14px;border-radius:2px;display:inline-block">BOOK SERVICE →</div>
+          </div>
+          <!-- Services grid mockup -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:3px;padding:10px">
+              <div style="font-family:var(--ff-m);font-size:8px;color:var(--gold);margin-bottom:4px">⚙️ ECU Tuning</div>
+              <div style="font-size:10px;color:var(--muted)">Performance engineering for superbikes</div>
+            </div>
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:3px;padding:10px">
+              <div style="font-family:var(--ff-m);font-size:8px;color:var(--gold);margin-bottom:4px">🚗 Free Pickup</div>
+              <div style="font-size:10px;color:var(--muted)">Doorstep pickup & drop service</div>
+            </div>
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:3px;padding:10px">
+              <div style="font-family:var(--ff-m);font-size:8px;color:var(--gold);margin-bottom:4px">🔧 Full Service</div>
+              <div style="font-size:10px;color:var(--muted)">Comprehensive bike maintenance</div>
+            </div>
+            <div style="background:var(--card);border:1px solid var(--border);border-radius:3px;padding:10px">
+              <div style="font-family:var(--ff-m);font-size:8px;color:var(--gold);margin-bottom:4px">📅 Online Booking</div>
+              <div style="font-size:10px;color:var(--muted)">Book service appointments online</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="pcard reveal">
         <div class="pcard-num">001</div>
         <h3 class="pcard-title">ResumeIQ Pro</h3>
@@ -663,7 +734,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">Actionable score with specific improvements in 30 seconds.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">React</span><span class="ptag hi">Claude AI</span><span class="ptag">JavaScript</span><span class="ptag">Tailwind</span></div>
-        <div class="pcard-foot"><a href="https://github.com/kiru-builds/Resumeiq-pro" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
+        <div class="pcard-foot"><a href="https://github.com/kiru-builds/Resumeiq-pro" target="_blank" class="plink">↗ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
       <div class="pcard reveal">
         <div class="pcard-num">002</div>
@@ -679,7 +750,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">87 roles matched · Live on Streamlit Cloud.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">Python</span><span class="ptag hi">AI / LLM</span><span class="ptag">Streamlit</span><span class="ptag">Live</span></div>
-        <div class="pcard-foot"><a href="https://github.com/kiru-builds/career-navigator-app" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
+        <div class="pcard-foot"><a href="https://github.com/kiru-builds/career-navigator-app" target="_blank" class="plink">↗ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
       <div class="pcard reveal">
         <div class="pcard-num">003</div>
@@ -695,7 +766,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">87% accuracy · 8+ KPIs · Auto PDF reports · Live.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">Python</span><span class="ptag hi">ML</span><span class="ptag">Streamlit</span><span class="ptag">Pandas</span></div>
-        <div class="pcard-foot"><a href="https://github.com/kiru-builds/smart-sales-forecasting" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
+        <div class="pcard-foot"><a href="https://github.com/kiru-builds/smart-sales-forecasting" target="_blank" class="plink">↗ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
       <div class="pcard reveal">
         <div class="pcard-num">004</div>
@@ -711,7 +782,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">99% accuracy · 14h saved/week · Bulk processing.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">Claude AI</span><span class="ptag hi">JavaScript</span><span class="ptag">PDF</span><span class="ptag">Analytics</span></div>
-        <div class="pcard-foot"><a href="https://github.com/kiru-builds/invoice-iq" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
+        <div class="pcard-foot"><a href="https://github.com/kiru-builds/invoice-iq" target="_blank" class="plink">↗ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
       <div class="pcard reveal">
         <div class="pcard-num">005</div>
@@ -727,7 +798,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           <div class="pcs-row"><span class="pcs-l">Outcome</span><span class="pcs-v">8+ KPIs · AI weekly insights · Real-time segments.</span></div>
         </div>
         <div class="pcard-stack"><span class="ptag hi">React</span><span class="ptag hi">Claude AI</span><span class="ptag">Recharts</span><span class="ptag">Tailwind</span></div>
-        <div class="pcard-foot"><a href="https://github.com/kiru-builds/biz-dashboard" target="_blank" class="plink">↗️ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
+        <div class="pcard-foot"><a href="https://github.com/kiru-builds/biz-dashboard" target="_blank" class="plink">↗ GitHub</a><a href="#contact" class="plink dim">→ Build similar</a></div>
       </div>
       <div class="pcard cta-p">
         <div class="pcard-num" style="color:var(--dim)">NEXT</div>
@@ -837,7 +908,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
         <p class="about-body">I'm <strong>Kirthika Rajendran</strong>, an AI & Data Developer from <strong>Chennai, India</strong> specialising in analytics dashboards, invoice automation, and SaaS interfaces.<br/><br/>Every project I ship is <strong>open-source on GitHub</strong>, fully documented, and production-ready. I combine ML engineering with clean React front-ends to build tools that look as good as they perform.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
           <a href="mailto:kirthika.rajendran2005@gmail.com" class="btn-gold">Get In Touch →</a>
-          <a href="https://github.com/kiru-builds" target="_blank" class="btn-ghost">↗️ GitHub</a>
+          <a href="https://github.com/kiru-builds" target="_blank" class="btn-ghost">↗ GitHub</a>
         </div>
       </div>
       <div class="reveal">
@@ -851,7 +922,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
           <div>
             <div class="gh-t">kiru-builds</div>
             <div class="gh-s">Active · Open source · Chennai, India</div>
-            <a href="https://github.com/kiru-builds" target="_blank" style="font-family:var(--ff-m);font-size:10px;color:var(--gold);text-decoration:none;letter-spacing:0.08em;display:inline-flex;align-items:center;gap:4px;margin-top:10px;opacity:0.8">↗️ View Profile</a>
+            <a href="https://github.com/kiru-builds" target="_blank" style="font-family:var(--ff-m);font-size:10px;color:var(--gold);text-decoration:none;letter-spacing:0.08em;display:inline-flex;align-items:center;gap:4px;margin-top:10px;opacity:0.8">↗ View Profile</a>
           </div>
           <div class="gh-nums">
             <div class="ghn"><div class="gnv">11</div><div class="gnl">Repos</div></div>
@@ -863,6 +934,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:24px 52px
     </div>
   </div>
 </div>
+
 <!-- CONTACT -->
 <div class="cta-bg" id="contact">
   <div class="cta-inner">
